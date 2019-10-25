@@ -2,4 +2,4 @@
 
 My name is Dmitry!
 
-For the first task in workshop
+For the first task in workshop.
