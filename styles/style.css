@@ -221,8 +221,12 @@ main__section1
     height: 55px;
     background-color: transparent;
     border: none;
-    position: relative;  
-    z-index: 1000;  
+    position: relative;    
+}
+
+.button-arr__arrow {
+    position: relative;
+    z-index: 20;
 }
 
 .intro__button:before {
@@ -234,6 +238,7 @@ main__section1
     width: 0;
     transition: width 1s;
     height: 55px;
+    z-index: 0;
 }
 
 .intro__button:hover:before {
