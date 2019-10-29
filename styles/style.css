@@ -65,11 +65,13 @@ Header
 .center1690 {
     max-width: 1690px;
     margin: 0 auto;
+    position: relative;
 }
 
 .header__center {
     display: flex;
-    padding: 25px 0;
+    padding-top: 25px;
+    padding-bottom: 26px;
     justify-content: space-between;
     position: relative;
 }
@@ -175,7 +177,7 @@ main__section1
 
 ############################################################################ */
 
-.main__section {
+.section_photo {
     background-image: url("../img/danceparty.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -183,16 +185,10 @@ main__section1
     background-blend-mode: soft-light;
 }
 
-.center {
-    max-width: 1170px;
-    margin: 0 auto;
-    position: relative; 
-}
-
 .section__intro {
     display: flex;
     flex-direction: column;
-    padding-top:380px;
+    padding-top:379px;
     padding-bottom: 400px;
     align-items: center;
 }
@@ -213,7 +209,7 @@ main__section1
     width: 577px;
     font-size: 18px;
     line-height: 30px;
-    margin-bottom: 40px;;
+    margin-bottom: 41px;;
 }
 
 .button-arr {
@@ -243,4 +239,53 @@ main__section1
 
 .intro__button:hover:before {
     width: 110px;
+}
+
+.intro__social-list {
+    position: absolute;
+    top: calc(50% - 83px);
+    right: 0;
+}
+
+.intro__social-webs {
+    object-fit: cover;
+    fill: #b7bad2;
+}
+
+.grad {
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.grad:hover {
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+.intro__social-list li {
+    margin-bottom: 26px;
+}
+
+.intro__social-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* ############################################################################
+
+main__section2
+
+############################################################################ */
+
+.section_gray {
+    background-color: #1b2136;
+}
+
+.center {
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative; 
+}
+
+.listen__list {
+    display: flex;
 }
