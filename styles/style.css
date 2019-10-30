@@ -1,27 +1,27 @@
 @font-face {
     font-family: 'Fira Sans Condensed Semibold';
-    src: url('../fonts/FiraSansCondensed-SemiBold.woff') format('woff');
+    src: url('..fonts/FiraSansCondensed-SemiBold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Fira Sans Condensed Regular';
-    src: url('../fonts/FiraSansCondensed-Regular.woff') format('woff');
+    src: url('..fonts/FiraSansCondensed-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Poppins Regular';
-    src: url('../fonts/Poppins-Regular.woff') format('woff');
+    src: url('..fonts/Poppins-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Poppins Medium';
-    src: url('../fonts/Poppins-Medium.woff') format('woff');
+    src: url('..fonts/Poppins-Medium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
