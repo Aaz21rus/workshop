@@ -130,7 +130,6 @@ Header
 
 .but:hover:before {
     width: 100%;
-    opacity: 1;
 }
 
 .but:hover {
@@ -281,6 +280,46 @@ main__section2
     position: relative; 
 }
 
+.section__listen {
+    padding-top: 108px;
+    padding-bottom: 107px;
+}
+
+.listen__title {
+    display: flex;
+    margin-bottom: 47px;
+}
+
 .listen__list {
     display: flex;
+}
+
+.listen__lines {
+    margin-right: 32px;
+}
+
+.listen__text {
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.listen__img {
+    position: relative;
+}
+
+.play {
+    width: 32px;
+    height: 33px;
+    background-image: url("../img/triangles.svg"); 
+    background-color: transparent;
+    border: none;
+}
+
+.listen__play {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    
 }
