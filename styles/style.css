@@ -1,27 +1,27 @@
 @font-face {
     font-family: 'Fira Sans Condensed Semibold';
-    src: url('..fonts/FiraSansCondensed-SemiBold.woff') format('woff');
+    src: url('../fonts/FiraSansCondensed-SemiBold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Fira Sans Condensed Regular';
-    src: url('..fonts/FiraSansCondensed-Regular.woff') format('woff');
+    src: url('../fonts/FiraSansCondensed-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Poppins Regular';
-    src: url('..fonts/Poppins-Regular.woff') format('woff');
+    src: url('../fonts/Poppins-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Poppins Medium';
-    src: url('..fonts/Poppins-Medium.woff') format('woff');
+    src: url('../fonts/Poppins-Medium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -60,6 +60,9 @@ Header
 
 .header {
     background-color: #141435;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 .center1690 {
@@ -132,7 +135,7 @@ Header
     width: 100%;
 }
 
-.but:hover {
+.but:hover svg {
     opacity: 1;
 }
 
@@ -294,6 +297,14 @@ main__section2
     display: flex;
 }
 
+.listen__list-item {
+    margin-right: 14px;
+}
+
+.listen__list-item:last-child {
+    margin-right: 0;
+}
+
 .listen__lines {
     margin-right: 32px;
 }
@@ -306,20 +317,80 @@ main__section2
 
 .listen__img {
     position: relative;
+    margin-bottom: 29px;
+}
+
+.listen__cover {
+    display: block;
 }
 
 .play {
-    width: 32px;
-    height: 33px;
+    width: 100%;
+    height: 100%;
     background-image: url("../img/triangles.svg"); 
     background-color: transparent;
     border: none;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .listen__play {
     position: absolute;
     top: 0;
-    left: 0;
-    margin: 0 auto;
-    
+    left: 0; 
 }
+
+.listen__prop_name {
+    display: list-item;
+    margin-bottom: 17px;
+}
+
+.listen__prop {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.listen__button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    height: 48px;
+    top: 330px;
+}
+
+.listen__button_left {
+    left: -227px;
+}
+
+.listen__button_right {
+    -moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    right: -227px;
+}
+
+.listen__arrow-s {
+    position: relative;
+    z-index: 20;
+}
+
+.listen__button:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 48px;
+    border-radius: 2px;
+    background: #2c3552;
+    transition: width 1s;
+    right: 30px;
+    top: 0;
+    z-index: 0;
+}
+
+.listen__button:hover:before {
+    width: 63px;
+}
+
+
