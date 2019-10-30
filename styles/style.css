@@ -99,7 +99,7 @@ Header
     position: relative;
 }
 
-.one{
+.nav__lines{
     position: absolute;
     top: -30px;
     left: 0;
@@ -108,12 +108,12 @@ Header
 }
 
 /* .one:before {
-    content: url("../img/lines.svg");
+    content: attr(data-but) url("../img/lines.svg");
     width: 16px;
     height: 19px;
     position: absolute;
     opacity: 0;
-    transition: opacity 1s;
+    transition: opacity 1s; 
 } */
 
 .nav__item:before {
@@ -130,10 +130,11 @@ Header
 
 .but:hover:before {
     width: 100%;
+    opacity: 1;
 }
 
 .but:hover {
-    opacity: 1; 
+    opacity: 1;
 }
 
 .header__right-side {
