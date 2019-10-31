@@ -317,6 +317,7 @@ main__section2
 .listen__img {
     position: relative;
     margin-bottom: 29px;
+    z-index: 0;
 }
 
 .listen__cover {
@@ -337,7 +338,28 @@ main__section2
     position: absolute;
     top: 0;
     left: 0; 
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 20;
 }
+
+.listen__play:hover {
+    opacity: 1;
+}
+
+.listen__img:hover {
+    background-img: url("../img/dark.png");
+    opacity: 0.3;
+}
+
+/* a { display: block; position: relative; }
+
+a:after { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,.5);  opacity: 0; }
+
+a:before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url(icon-path); opacity: 0; }
+
+a:hover:before,
+a:hover:after { opacity: 1; } */
 
 .listen__prop_name {
     display: list-item;
