@@ -110,15 +110,6 @@ Header
     transition: opacity 1s;
 }
 
-/* .one:before {
-    content: attr(data-but) url("../img/lines.svg");
-    width: 16px;
-    height: 19px;
-    position: absolute;
-    opacity: 0;
-    transition: opacity 1s; 
-} */
-
 .nav__item:before {
     content: attr(data-but);
     position: absolute;
@@ -186,7 +177,7 @@ main__section1
     display: flex;
     flex-direction: column;
     padding-top:379px;
-    padding-bottom: 400px;
+    padding-bottom: 396px;
     align-items: center;
 }
 
@@ -284,14 +275,15 @@ main__section2
 }
 
 .section__listen {
-    padding-top: 108px;
+    padding-top: 107px;
     padding-bottom: 107px;
 }
 
 .listen__title {
     display: flex;
-    margin-bottom: 47px;
+    margin-bottom: 56px;
 }
+
 
 .listen__list {
     display: flex;
@@ -306,10 +298,17 @@ main__section2
 }
 
 .listen__lines {
+    width: 19px;
+    height: 45px;
+    background-image: url("../img/Lines2.svg");
+}
+
+.lines {
     margin-right: 32px;
 }
 
 .listen__text {
+    font-weight: 400;
     color: #ffffff;
     font-size: 40px;
     line-height: 40px;
@@ -342,7 +341,7 @@ main__section2
 
 .listen__prop_name {
     display: list-item;
-    margin-bottom: 17px;
+    margin-bottom: 11px;
 }
 
 .listen__prop {
@@ -351,12 +350,18 @@ main__section2
     line-height: 18px;
 }
 
+.listen__prop_schedule {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Poppins Regular';
+}
+
 .listen__button {
     background-color: transparent;
     border: none;
     position: absolute;
     height: 48px;
-    top: 330px;
+    top: 315px;
 }
 
 .listen__button_left {
@@ -384,7 +389,7 @@ main__section2
     border-radius: 2px;
     background: #2c3552;
     transition: width 1s;
-    right: 30px;
+    right: 20px;
     top: 0;
     z-index: 0;
 }
