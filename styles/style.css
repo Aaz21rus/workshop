@@ -600,3 +600,166 @@ main__section3
     background-size: contain;
     margin-bottom: 30px;
 }
+
+.section__schedule {
+    padding-top: 109px;
+    padding-bottom: 105px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.schedule__week {
+    width: 1056px;
+    display: flex;
+    justify-content: center;
+    background-color: #1e253f;
+    border-radius: 5px;
+    border: 1px solid #323952;
+}
+
+.schedule__days {
+    display: flex;
+    align-items: center;
+}
+
+.schedule__day {
+    background-color: transparent;
+    border: none;
+    padding-top: 24px; 
+    padding-bottom: 21px;
+    padding-right: 40px;
+    padding-left: 49px;
+    font-size: 16px;
+    color: #ffffff;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.schedule__day:hover {
+    padding: 19px 44px 16px 44px;
+    box-shadow: 8px 7px 40px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background-color: #3d466a;
+    transition: all 0.3s;
+}
+
+.schedule__day::before {
+    content: attr(data-day);
+    position: absolute;
+    background: linear-gradient(to left, #ff7d56 0%, #ff498e 100%);
+    font-weight: bold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 0;
+    height: 100%;
+    left: 0;
+    /* transition: width 0.3s; */
+}
+
+.schedule__day:hover::before {
+    width: 100%;
+    /* transition: width 0.3s;     */
+}
+
+.schedule__radio {
+    width: 1056px;
+    padding-top: 48px;
+    padding-bottom: 47px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 12px;
+    justify-content: center;
+    border-radius:0 0 5px 5px;
+    background-color: #1e253f;
+}
+
+.schedule__radio-name {
+    width: 224px;
+    padding-top: 29px;
+    padding-left: 32px;
+    border-radius: 5px;
+    background-color: #252c47;
+}
+
+.radio__name {
+    display: block;
+    color: #fefefe;
+    font-size: 17px;
+    margin-bottom: 9px;
+    line-height: 18px;
+}
+
+.radio__name::before {
+    content: attr(data-radio);
+    position: absolute;
+    background: linear-gradient(to left, #ff7d56 0%, #ff498e 100%);
+    font-weight: bold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 0;
+    height: 100%;
+    /* left: 0; */
+    transition: width 0.3s;
+}
+
+.radio__name:hover::before {
+    width: 100%;
+    transition: width 0.3s;    
+}
+
+.radio__genre {
+    margin-bottom: 23px;
+    color: #f3f3f3;
+    font-family: 'Poppins Regular';
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.radio__play {
+    width: 29px;
+    height: 29px;
+    background-size: contain;
+    display: inline-block;
+}
+
+.radio__time {
+    color: #dbdbdb;
+    font-size: 15px;
+    line-height: 15px;
+    display: inline-block;
+    margin-bottom: 26px;
+    margin-left: 74px;
+}
+
+.schedule__btn {
+    background-color: transparent;
+    border: none;
+    top: 50%;
+    transform: translate(-50%);
+}
+.schedule__btn_left {
+    position: absolute;
+    left: -57px;
+    transition: left 0.3s;
+}
+
+.schedule__btn_left:hover {
+    left: -60px;
+    transition: left 0.3s;
+}
+
+.schedule__btn_right {
+    position: absolute;
+    -moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    right: -57px;
+    transition: right 0.3s;
+}
+
+.schedule__btn_right:hover {
+    right: -60px;
+    transition: right 0.3s;
+}
