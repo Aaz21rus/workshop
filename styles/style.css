@@ -296,10 +296,23 @@ main__section2
 }
 
 .listen__title {
-    display: flex;
     margin-bottom: 56px;
 }
 
+.title {
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 40px;
+    padding-bottom: 5px;
+}
+
+.lines {
+    padding-left: 53px;
+    background-image: url("../img/Lines2.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+}
 
 .listen__list {
     display: flex;
@@ -307,27 +320,11 @@ main__section2
 
 .listen__list-item {
     margin-right: 14px;
+    position: relative;
 }
 
 .listen__list-item:last-child {
     margin-right: 0;
-}
-
-.listen__lines {
-    width: 19px;
-    height: 45px;
-    background-image: url("../img/Lines2.svg");
-}
-
-.lines {
-    margin-right: 32px;
-}
-
-.listen__text {
-    font-weight: 400;
-    color: #ffffff;
-    font-size: 40px;
-    line-height: 40px;
 }
 
 .listen__img {
@@ -358,8 +355,8 @@ main__section2
 }
 
 .play {
-    width: 100%;
-    height: 100%;
+    width: 32px;
+    height: 33px;
     background-image: url("../img/triangles.svg"); 
     background-color: transparent;
     border: none;
@@ -368,6 +365,8 @@ main__section2
 }
 
 .listen__play {
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0; 
@@ -392,11 +391,27 @@ main__section2
     font-weight: bold;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: width 1s;
     width: 0;
     height: 100%;
     transition: width 1s;
 }
+
+.listen__arrow {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    /* transition: opacity 1s; */
+}
+
+/* .listen__prop_schedule::before {
+    content: url(../img/Arrow_grad.svg);
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
+} */
 
 .listen__prop_name:hover::before {
     width: 100%;
@@ -406,6 +421,15 @@ main__section2
 .listen__prop_name:hover + .listen__prop_schedule {
     opacity: 0;
 }
+
+.listen__prop_name:hover ~ .listen__arrow {
+    opacity: 1;
+    
+}
+
+/* .listen__prop_name:hover svg {
+    opacity: 1;
+} */
 
 .listen__prop {
     display: block;
@@ -462,4 +486,117 @@ main__section2
     width: 63px;
 }
 
+/* ############################################################################
 
+main__section3
+
+############################################################################ */
+
+.section_purple {
+    background-color: #13142e;
+}
+
+.podcasts {
+    padding-top: 107px;
+    padding-bottom: 110px;
+}
+
+.podcasts__title {
+    margin-bottom: 54px;
+}
+
+.podcasts__music {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.podcasts__author {
+    position: relative;
+    background-color: #252c47;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    border-radius: 5px;
+    width: 270px;
+    padding-left: 27px;
+    padding-top: 42px;
+}
+
+.Nile {
+    background-image: url("../img/Nile Rodgers.png");
+}
+
+.Beatles {
+    background-image: url("../img/Beatles.png");
+}
+
+.Daft {
+    background-image: url("../img/kanyeWest.png");
+}
+
+.David {
+    background-image: url("../img/David Bowie.png");
+}
+
+.Counties {
+    background-image: url("../img/Counties_Radio.png");
+}
+
+.Cambridgeshire {
+    background-image: url("../img/Cambridgeshire.png");
+}
+
+.Newcastle {
+    background-image: url("../img/Newcastle.png");
+}
+
+.Lancashire {
+    background-image: url("../img/Lancashire.png");
+}
+
+.podcasts__photo {
+    display: block;
+}
+
+.podcasts__text {
+    color: #fefefe;
+    font-family: 'Fira Sans Condensed Regular';
+    font-size: 19px;
+    line-height: 19px;
+    position: relative;
+}
+
+.podcasts__text_name::before {
+    content: attr(data-author);
+    position: absolute;
+    background: linear-gradient(to left, #ff7d56 0%, #ff498e 100%);
+    font-weight: bold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 0;
+    height: 100%;
+    transition: width 1s;
+}
+
+.podcasts__text_name:hover::before {
+    width: 100%;
+}
+
+.podcasts__text_name {
+    display: block;
+    margin-bottom: 11px;
+}  
+
+.podcasts__text_time {
+    font-family: 'Poppins Regular';
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 129px;
+}
+
+.podcasts__play {
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    margin-bottom: 30px;
+}
