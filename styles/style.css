@@ -913,6 +913,7 @@ main__section5
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 26px;
+    margin-bottom: 38px;
 }
 
 .chart__list {
@@ -1049,4 +1050,26 @@ main__section5
     font-size: 30px;
     line-height: 30px;
     margin-bottom: 7px;
+}
+
+.chart__tracklist {
+    display: flex;
+}
+
+.chart__btn-name {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 23px;
+}
+
+.chart__view {
+    background-color: transparent;
+    border: none;
+    transition: all 0.3s;
+}
+
+.chart__view:hover {
+    transform: translate(5px);
+    transition: all 0.3s;
 }
