@@ -606,9 +606,16 @@ main__section3
     margin-bottom: 30px;
 }
 
+/* ############################################################################
+
+main__section4
+
+############################################################################ */
+
+
 .section__schedule {
-    padding-top: 109px;
-    padding-bottom: 105px;
+    padding-top: 112px;
+    padding-bottom: 108px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -631,8 +638,8 @@ main__section3
 .schedule__day {
     background-color: transparent;
     border: none;
-    padding-top: 24px; 
-    padding-bottom: 21px;
+    padding-top: 17px; 
+    padding-bottom: 17px;
     padding-right: 40px;
     padding-left: 49px;
     font-size: 16px;
@@ -642,7 +649,7 @@ main__section3
 }
 
 .schedule__day:hover {
-    padding: 19px 44px 16px 44px;
+    padding: 13px 42px 13px 42px;
     box-shadow: 8px 7px 40px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     background-color: #3d466a;
@@ -669,8 +676,8 @@ main__section3
 
 .schedule__radio {
     width: 1056px;
-    padding-top: 48px;
-    padding-bottom: 47px;
+    padding-top: 50px;
+    padding-bottom: 53px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 12px;
@@ -777,20 +784,20 @@ main__section3
 
 /* ############################################################################
 
-main__section4
+main__section5
 
 ############################################################################ */
 
 .section__video {
-    padding-top: 111px;
-    padding-bottom: 111px;
+    padding-top: 108px;
+    padding-bottom: 110px;
     background-image: url("../img/wiz-khalifa.png");  
     background-repeat: no-repeat;
     background-position: bottom right;
 }
 
 .video__title {
-    margin-bottom: 149px;
+    margin-bottom: 145px;
 }
 
 .video__author {
@@ -813,6 +820,8 @@ main__section4
     color: #ffffff;
     font-size: 35px;
     line-height: 35px;
+    font-weight: 400;
+    align-self: flex-start;
 }
 
 .video__description {
@@ -827,8 +836,7 @@ main__section4
     grid-template-columns: 52px 373px;
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 25px;
-    grid-row-gap: 19px;
-    margin-bottom: 121px;
+    margin-bottom: 117px;
 }
 
 .video__picture {
@@ -896,17 +904,17 @@ main__section4
 
 /* ############################################################################
 
-main__section5
+main__section6
 
 ############################################################################ */
 
 .section__chart {
     padding-top: 108px;
-    padding-bottom: 109px;
+    padding-bottom: 108px;
 }
 
 .chart__title {
-    margin-bottom: 47px;
+    margin-bottom: 54px;
 }
 
 .chart__units {
@@ -927,10 +935,10 @@ main__section5
     display: grid;
     grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    padding-top: 22px;
-    padding-bottom: 21px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     transition: all 0.3s;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 }
 
 .chart__unit:last-child {
@@ -1001,16 +1009,16 @@ main__section5
 .chart__description {
     width: 573px;
     background-color: #1e253f;
-    padding-top: 60px;
+    padding-top: 59px;
     padding-left: 71px;
 }
 
 .chart__video {
     width: 442px;
-    height: 243px;
+    height: 240px;
     border-radius: 5px;
     background-color: #353646;
-    margin-bottom: 21px;
+    margin-bottom: 22px;
 }
 
 .chart__info {
@@ -1018,7 +1026,7 @@ main__section5
     font-family: 'Fira Sans Condensed Regular';
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 54px;
+    margin-bottom: 57px;
 }
 
 .chart__positions {
@@ -1049,7 +1057,7 @@ main__section5
 .chart__positions_last {
     font-size: 30px;
     line-height: 30px;
-    margin-bottom: 7px;
+    margin-bottom: 13px;
 }
 
 .chart__tracklist {
@@ -1072,4 +1080,179 @@ main__section5
 .chart__view:hover {
     transform: translate(5px);
     transition: all 0.3s;
+}
+
+/* ############################################################################
+
+footer
+
+############################################################################ */
+
+.footer__center {
+    padding-top: 109px;
+    padding-bottom: 122px;
+    border-bottom: 1px solid #1e253f;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: start;
+}
+
+.footer__logo {
+   margin-top: 8px; 
+   margin-bottom: 34px;
+   grid-row: 1/3;
+}
+
+.footer__language {
+    font-family: 'Poppins Regular';
+    font-size: 15px;
+    line-height: 15px;
+    color: #c1c3da;
+    grid-row: 3/4;
+    margin-bottom: 48px;
+}
+
+.footer__lang {
+    color: #ffffff;
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.footer__buttons {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.footer__btn {
+    margin-right: 10px;
+} 
+
+.sign {
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #383f5c;
+    width: 110px;
+    height: 38px;
+    color: #848597;
+    transition: all 0.3s;
+}
+
+.sign:hover {
+    transition: all 0.3s;
+    background-color: #ffffff;
+    color: #570fc6;
+}
+
+.footer__service {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 49px;
+}
+
+.footer__services-list {
+    grid-column: 2/3;
+    grid-row: 2/6;
+}
+
+.footer__serv-unit {
+    color: #c1c3da;
+    font-family: 'Poppins Regular';
+    font-size: 15px;
+    line-height: 15px;
+    margin-bottom: 18px;
+}
+
+.footer__serv-unit:last-child {
+    margin-bottom: 0;
+}
+
+.footer__serv-unit_col {
+    grid-row: 2/8;
+    grid-column: 3/4;
+}
+
+.footer__events {
+   grid-row: 2/6;
+}
+
+.footer__New-York {
+    border-radius: 5px;
+    border: 1px solid #383f5c;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 270px;
+}
+
+.footer__time {
+    border-radius: 5px;
+    background-color: #1e253f;
+    color: #ffffff;
+    font-family: 'Poppins Regular';
+    font-size: 15px;
+    line-height: 15px;
+    padding: 14px 19px;
+    margin-right: 20px;
+    grid-row: 1/3;
+}
+
+.footer__city {
+    color: #c1c3da;
+    font-family: 'Poppins Regular';
+    font-size: 15px;
+    line-height: 15px;    
+}
+
+.footer__date {
+    color: #c1c3da;
+    font-family: 'Poppins Regular';
+    font-size: 12px;
+    line-height: 12px;  
+}
+
+.footer__rights {
+    padding-top: 35px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__2018 {
+    
+}
+
+.footer__copy {
+    color: #ffffff;
+    font-family: 'Poppins Regular';
+    font-size: 15px;
+    line-height: 15px;
+    margin-bottom: 19px;
+}
+
+.footer__privacy {
+    color: #848597;
+    font-family: 'Poppins Regular';
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.footer__cont {
+    
+}
+
+.footer__connect {
+    color: #ffffff;
+    font-family: 'Poppins Regular';
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.footer__social {
+
 }
