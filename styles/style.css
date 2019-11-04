@@ -839,10 +839,14 @@ main__section5
     margin-bottom: 117px;
 }
 
+.video__menu {
+    position: relative;
+}
+
 .video__picture {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    position: relative;
+    /* position: relative; */
 }
 
 .video__img {
@@ -1251,8 +1255,19 @@ footer
     font-family: 'Poppins Regular';
     font-size: 15px;
     line-height: 15px;
+    margin-bottom: 22px;
+    text-align: center;
 }
 
 .footer__social {
+    display: flex;
+    align-items: flex-end;
+}
 
+.footer__soc {
+    margin-right: 19px;
+}
+
+.footer__soc:last-child {
+    margin-right: 0;
 }
