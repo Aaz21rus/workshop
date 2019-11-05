@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>home</title>
+    <link rel="stylesheet" href="styles/swiper.css">
     <link rel="stylesheet" href="styles/jquery.formstyler.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -277,9 +278,9 @@
         <section class="main__section section section_gray">
             <div class="section__listen listen center">
                 <h2 class="listen__title title lines">Listen Live</h2>
-                <div class="listen__radio">
-                    <ul class="listen__list">
-                        <li class="listen__list-item">
+                <div class="listen__radio swiper-container">
+                    <ul class="listen__list swiper-wrapper">
+                        <li class="listen__list-item swiper-slide">
                             <div class="listen__img">
                                 <img src="img/cover1.png" alt="cover" class="listen__cover">
                                 <button area-label="button-play" class="listen__play play"></button>
@@ -303,7 +304,7 @@
                                 </svg>
                             </button>   
                         </li>
-                        <li class="listen__list-item">
+                        <li class="listen__list-item swiper-slide">
                             <div class="listen__img">
                                 <img src="img/cover2.png" alt="cover" class="listen__cover">
                                 <button area-label="button-play" class="listen__play play"></button>
@@ -327,7 +328,7 @@
                                 </svg>
                             </button>   
                         </li>
-                        <li class="listen__list-item">
+                        <li class="listen__list-item swiper-slide">
                             <div class="listen__img">
                                 <img src="img/cover3.png" alt="cover" class="listen__cover">
                                 <button area-label="button-play" class="listen__play play"></button>
@@ -351,7 +352,7 @@
                                 </svg>
                             </button>   
                         </li>
-                        <li class="listen__list-item">
+                        <li class="listen__list-item swiper-slide">
                             <div class="listen__img">
                                 <img src="img/cover4.png" alt="cover" class="listen__cover">
                                 <button area-label="button-play" class="listen__play play"></button>
@@ -375,7 +376,7 @@
                                 </svg>
                             </button>   
                         </li>
-                        <li class="listen__list-item">
+                        <li class="listen__list-item swiper-slide">
                             <div class="listen__img">
                                 <img src="img/cover5.png" alt="cover" class="listen__cover">
                                 <button  area-label="button-play"  class="listen__play play"></button>
@@ -401,7 +402,7 @@
                         </li>                            
                     </ul>
                 </div>
-                <button  area-label="left" class="listen__button listen__button_left">
+                <button  area-label="left" class="listen__button listen__button_left swiper-button-prev">
                     <svg class="listen__arrow-s" xmlns="http://www.w3.org/2000/svg" width="48" height="10" viewBox="0 0 48 10">
                         <g>
                             <g>
@@ -410,7 +411,7 @@
                         </g>
                     </svg>
                 </button>
-                <button area-label="right" class="listen__button listen__button_right">
+                <button area-label="right" class="listen__button listen__button_right swiper-button-next">
                     <svg class="listen__arrow-s" xmlns="http://www.w3.org/2000/svg" width="48" height="10" viewBox="0 0 48 10">
                         <g>
                             <g>
@@ -801,6 +802,7 @@
         </div>
     </footer>
     <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script src="scripts/swiper.js"></script>
     <script src="scripts/jquery.formstyler.min.js"></script>
     <script src="scripts/script.js"></script>
 </body>
