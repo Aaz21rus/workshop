@@ -1114,16 +1114,48 @@ footer
     color: #c1c3da;
     grid-row: 3/4;
     margin-bottom: 48px;
+    display: flex;
 }
 
-.footer__lang {
+/* .footer__lang {
     color: #ffffff;
     font-size: 15px;
     background-color: transparent;
     border: none;
     cursor: pointer;
     outline: none;
+} */
+
+.jq-selectbox {
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: #13142e;
+    margin-left: 5px;
 }
+
+.jq-selectbox__select {
+    width: 111px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.jq-selectbox__select-text {
+    font-family: 'Poppins Regular';
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.jq-selectbox__trigger {
+    background-image: url("../img/drop_list.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 10px;
+    height: 6px;
+}
+
 
 .footer__buttons {
     grid-column: 1/2;
