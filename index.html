@@ -402,7 +402,7 @@
                         </li>                            
                     </ul>
                 </div>
-                <button  area-label="left" class="listen__button listen__button_left swiper-button-prev">
+                <button  area-label="left" class="listen__button listen__button_left">
                     <svg class="listen__arrow-s" xmlns="http://www.w3.org/2000/svg" width="48" height="10" viewBox="0 0 48 10">
                         <g>
                             <g>
@@ -411,7 +411,7 @@
                         </g>
                     </svg>
                 </button>
-                <button area-label="right" class="listen__button listen__button_right swiper-button-next">
+                <button area-label="right" class="listen__button listen__button_right">
                     <svg class="listen__arrow-s" xmlns="http://www.w3.org/2000/svg" width="48" height="10" viewBox="0 0 48 10">
                         <g>
                             <g>
@@ -473,33 +473,405 @@
             <div class="schedule section__schedule center">
                 <ul class="schedule__week">
                     <li class="schedule__days">
-                        <button area-label="show-schedule" data-day="MONDAY" class="schedule__day">MONDAY</button>
+                        <button area-label="show-schedule" data-class=".monday" data-day="MONDAY" class="schedule__day">MONDAY</button>
                     </li>
                     <li class="schedule__days">
-                        <button area-label="show-schedule" data-day="TUESDAY" class="schedule__day">TUESDAY</button>
+                        <button area-label="show-schedule" data-class=".tuesday" data-day="TUESDAY" class="schedule__day">TUESDAY</button>
                     </li>
                     <li class="schedule__days">
-                        <button area-label="show-schedule" data-day="WEDNESDAY" class="schedule__day">WEDNESDAY</button>
+                        <button area-label="show-schedule" data-class=".wednesday" data-day="WEDNESDAY" class="schedule__day">WEDNESDAY</button>
                     </li>
                     <li class="schedule__days">
-                        <button area-label="show-schedule" data-day="THURSDAY" class="schedule__day">THURSDAY</button>
+                        <button area-label="show-schedule" data-class=".thursday" data-day="THURSDAY" class="schedule__day">THURSDAY</button>
                     </li>
                     <li class="schedule__days">
-                        <button area-label="show-schedule" data-day="FRIDAY" class="schedule__day">FRIDAY</button>
+                        <button area-label="show-schedule" data-class=".friday" data-day="FRIDAY" class="schedule__day">FRIDAY</button>
                     </li>
                     <li class="schedule__days">
-                        <button area-label="show-schedule" data-day="SATURDAY" class="schedule__day">SATURDAY</button>
+                        <button area-label="show-schedule" data-class=".saturday" data-day="SATURDAY" class="schedule__day">SATURDAY</button>
                     </li>
                     <li class="schedule__days">
-                        <button area-label="show-schedule" data-day="SUNDAY" class="schedule__day">SUNDAY</button>
+                        <button area-label="show-schedule" data-class=".sunday" data-day="SUNDAY" class="schedule__day">SUNDAY</button>
                     </li>
                 </ul>
-                <ul class="schedule__radio">
+                <ul class="schedule__radio monday faded in schedule__radio_none schedule__radio_active">
                     <li class="schedule__radio-name radio">
                         <a href="#" data-radio="Radio Foorti" class="radio__name">Radio Foorti</a>
                         <p class="radio__genre">pop - news - talk</p>
                         <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 a1</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Thr Gegar" class="radio__name">Thr Gegar</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
                         <p class="radio__time">12:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Sinar FM" class="radio__name">Sinar FM</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">7:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Dhaka Fm" class="radio__name">Dhaka Fm</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">8:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Radio Abiram" class="radio__name">Radio Abiram</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Radio Ekattor" class="radio__name">Radio Ekattor</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Priyo Radio" class="radio__name">Priyo Radio</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Radio Munna" class="radio__name">Radio Munna</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Bangladesh Betar" class="radio__name">Bangladesh Betar</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="ABC Radio" class="radio__name">ABC Radio</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                </ul>
+                <ul class="schedule__radio tuesday faded schedule__radio_none">
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Radio Foorti" class="radio__name">Radio Foorti</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 a2</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Thr Gegar" class="radio__name">Thr Gegar</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Sinar FM" class="radio__name">Sinar FM</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">7:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Dhaka Fm" class="radio__name">Dhaka Fm</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">8:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Radio Abiram" class="radio__name">Radio Abiram</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Radio Ekattor" class="radio__name">Radio Ekattor</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Priyo Radio" class="radio__name">Priyo Radio</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Radio Munna" class="radio__name">Radio Munna</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Bangladesh Betar" class="radio__name">Bangladesh Betar</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="ABC Radio" class="radio__name">ABC Radio</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                </ul>
+                <ul class="schedule__radio wednesday faded schedule__radio_none">
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Radio Foorti" class="radio__name">Radio Foorti</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:03 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Thr Gegar" class="radio__name">Thr Gegar</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Sinar FM" class="radio__name">Sinar FM</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">7:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Dhaka Fm" class="radio__name">Dhaka Fm</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">8:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Radio Abiram" class="radio__name">Radio Abiram</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Radio Ekattor" class="radio__name">Radio Ekattor</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Priyo Radio" class="radio__name">Priyo Radio</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Radio Munna" class="radio__name">Radio Munna</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Bangladesh Betar" class="radio__name">Bangladesh Betar</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="ABC Radio" class="radio__name">ABC Radio</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                </ul>
+                <ul class="schedule__radio thursday faded schedule__radio_none">
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Radio Foorti" class="radio__name">Radio Foorti</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 a4</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Thr Gegar" class="radio__name">Thr Gegar</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Sinar FM" class="radio__name">Sinar FM</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">7:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Dhaka Fm" class="radio__name">Dhaka Fm</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">8:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Radio Abiram" class="radio__name">Radio Abiram</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Radio Ekattor" class="radio__name">Radio Ekattor</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Priyo Radio" class="radio__name">Priyo Radio</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Radio Munna" class="radio__name">Radio Munna</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Bangladesh Betar" class="radio__name">Bangladesh Betar</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="ABC Radio" class="radio__name">ABC Radio</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                </ul>
+                <ul class="schedule__radio friday faded schedule__radio_none">
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Radio Foorti" class="radio__name">Radio Foorti</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 a5</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Thr Gegar" class="radio__name">Thr Gegar</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Sinar FM" class="radio__name">Sinar FM</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">7:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Dhaka Fm" class="radio__name">Dhaka Fm</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">8:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Radio Abiram" class="radio__name">Radio Abiram</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Radio Ekattor" class="radio__name">Radio Ekattor</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Priyo Radio" class="radio__name">Priyo Radio</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Radio Munna" class="radio__name">Radio Munna</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Bangladesh Betar" class="radio__name">Bangladesh Betar</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="ABC Radio" class="radio__name">ABC Radio</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                </ul>
+                <ul class="schedule__radio saturday faded schedule__radio_none">
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Radio Foorti" class="radio__name">Radio Foorti</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 a6</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Thr Gegar" class="radio__name">Thr Gegar</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Sinar FM" class="radio__name">Sinar FM</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">7:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Dhaka Fm" class="radio__name">Dhaka Fm</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">8:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Radio Abiram" class="radio__name">Radio Abiram</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Radio Ekattor" class="radio__name">Radio Ekattor</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Priyo Radio" class="radio__name">Priyo Radio</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Radio Munna" class="radio__name">Radio Munna</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Bangladesh Betar" class="radio__name">Bangladesh Betar</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="ABC Radio" class="radio__name">ABC Radio</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:00 am</p>
+                    </li>
+                </ul>
+                <ul class="schedule__radio sunday faded schedule__radio_none">
+                    <li class="schedule__radio-name radio">
+                        <a href="#" data-radio="Radio Foorti" class="radio__name">Radio Foorti</a>
+                        <p class="radio__genre">pop - news - talk</p>
+                        <button area-label="button-play" class="radio__play play"></button>
+                        <p class="radio__time">12:07 am</p>
                     </li>
                     <li class="schedule__radio-name radio">
                         <a href="#" data-radio="Thr Gegar" class="radio__name">Thr Gegar</a>
@@ -585,29 +957,31 @@
                     <p class="video__description">See You Again ft. Charlie Puth<br> 
                         Has tempor iisque lucilius ut, ut fabulas incorrupte</p>
                 </div>
-                <div class="video__menu">
-                    <ul class="video__picture">
-                        <li class="video__img">
-                            <button area-label="button-play" class="video__run play"></button>
-                            <p class="video__text">OneRepublic</p>
-                            <p class="video__genre">Song</p>
-                        </li>
-                        <li class="video__img">
-                            <button area-label="button-play" class="video__run play"></button>
-                            <p class="video__text">OneRepublic</p>
-                            <p class="video__genre">Song</p>
-                        </li>
-                        <li class="video__img">
-                            <button area-label="button-play" class="video__run play"></button>
-                            <p class="video__text">Charlie Puth</p>
-                            <p class="video__genre">Song</p>
-                        </li>
-                        <li class="video__img">
-                            <button area-label="button-play" class="video__run play"></button>
-                            <p class="video__text">Ed Sheeran</p>
-                            <p class="video__genre">Song</p>
-                        </li>
-                    </ul>
+                <div class="footer__swiper">
+                    <div class="video__menu swiper-container">
+                        <ul class="video__picture swiper-wrapper">
+                            <li class="video__img swiper-slide">
+                                <button area-label="button-play" class="video__run play"></button>
+                                <p class="video__text">OneRepublic</p>
+                                <p class="video__genre">Song</p>
+                            </li>
+                            <li class="video__img swiper-slide">
+                                <button area-label="button-play" class="video__run play"></button>
+                                <p class="video__text">OneRepublic</p>
+                                <p class="video__genre">Song</p>
+                            </li>
+                            <li class="video__img swiper-slide">
+                                <button area-label="button-play" class="video__run play"></button>
+                                <p class="video__text">Charlie Puth</p>
+                                <p class="video__genre">Song</p>
+                            </li>
+                            <li class="video__img swiper-slide">
+                                <button area-label="button-play" class="video__run play"></button>
+                                <p class="video__text">Ed Sheeran</p>
+                                <p class="video__genre">Song</p>
+                            </li>
+                        </ul>
+                    </div>
                     <button area-label="left" class="video__btn v v_left">
                         <svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16">
                             <g>
