@@ -4,13 +4,15 @@ $(document).ready( function() {
 
     var mySwiper = new Swiper ('.swiper-container', {
         // Optional parameters
-        direction: 'vertical',
+        direction: 'horizontal',
         loop: true,
+        slidesPerView: 5,
 
         // Navigation arrows
         navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+            hiddenClass: 'swiper-button-prev',
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
     })
 });
