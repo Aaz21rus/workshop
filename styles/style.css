@@ -1073,6 +1073,21 @@ main__section6
     background-color: #1e253f;
     padding-top: 59px;
     padding-left: 71px;
+    display: none;
+}
+
+.chart__description_active {
+    display: block;
+}
+
+.smooth {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.show {
+    opacity: 1;
+    transition: opacity 0.3s;
 }
 
 .chart__video {

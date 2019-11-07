@@ -60,4 +60,14 @@ $(document).ready( function() {
         // }, 300);
     });
 
+    $('.chart__play').on('click', function(){
+        let number = $(this).attr('data-num');
+        $('.chart__description').removeClass('chart__description_active').removeClass('show');
+        $(number).addClass('chart__description_active');
+            
+        setTimeout(function(){
+            $(number).addClass('show');
+        }, 300);
+    });
+
 });
