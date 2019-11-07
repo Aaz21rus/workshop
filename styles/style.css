@@ -749,7 +749,6 @@ main__section4
     -webkit-text-fill-color: transparent;
     width: 0;
     height: 100%;
-    /* left: 0; */
     transition: width 0.3s;
 }
 
@@ -885,10 +884,6 @@ main__section5
 }
 
 .video__picture {
-    /* display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 30px; */
-    /* position: relative; */
     display: flex;
     justify-content: space-between;
 }
@@ -1007,7 +1002,6 @@ main__section6
 }
 
 .chart__unit:hover {
-    /* position: absolute; */
     box-shadow: 17px 14px 58px rgba(13, 15, 23, 0.24);
     background-color: #252c47;
     left: 39px;
