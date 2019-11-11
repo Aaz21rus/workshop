@@ -324,13 +324,14 @@ main__section2
 }
 
 .listen__list-item {
-    margin-right: 14px;
     position: relative;
 }
 
 .listen__list-item:last-child {
     margin-right: 0;
 }
+
+/* .listen__radio:hover { */
 
 .listen__img {
     position: relative;
@@ -350,13 +351,14 @@ main__section2
     opacity: 0;
 }
 
-.listen__img:hover::before {
+.listen__radio .listen__img:hover::before {
     opacity: 1;
     transition: opacity 0.3s;
 }
 
 .listen__cover {
     display: block;
+    /* width: 250px; */
 }
 
 .play {
@@ -379,7 +381,7 @@ main__section2
     transition: opacity 1s;
 }
 
-.listen__play:hover {
+.listen__radio .listen__play:hover {
     opacity: 1;
     transition: opacity 1s;
 }
