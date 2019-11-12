@@ -1299,6 +1299,7 @@ footer
     outline: none;
     background-color: #13142e;
     margin-left: 5px;
+    width: 127px;
 }
 
 .jq-selectbox__select {
