@@ -7,7 +7,7 @@ $(document).ready( function() {
         slidesPerView: 5,
         direction: 'horizontal',
         loop: true,
-        // spaceBetween: 15,
+        spaceBetween: 15,
 
         // Navigation arrows
         navigation: {
