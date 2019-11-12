@@ -597,50 +597,122 @@ main__section3
 }
 
 .podcasts__author {
+    display: block;
+    width: 270px;
+    height: 270px;
     position: relative;
     background-color: #252c47;
     background-repeat: no-repeat;
     background-position: bottom right;
     border-radius: 5px;
-    width: 270px;
     padding-left: 27px;
     padding-top: 42px;
 }
 
-.Nile {
+.podcasts__author_nile { 
     background-image: url("../img/Nile Rodgers.png");
 }
 
-.Beatles {
+.podcasts__author_Beatles {
     background-image: url("../img/Beatles.png");
 }
 
-.Daft {
+.podcasts__author_Daft {
     background-image: url("../img/kanyeWest.png");
 }
 
-.David {
+.podcasts__author_Bowie {
     background-image: url("../img/David Bowie.png");
 }
 
-.Counties {
+.podcasts__author_Counties {
     background-image: url("../img/Counties_Radio.png");
 }
 
-.Cambridgeshire {
+.podcasts__author_Cambridgeshire {
     background-image: url("../img/Cambridgeshire.png");
 }
 
-.Newcastle {
+.podcasts__author_Newcastle {
     background-image: url("../img/Newcastle.png");
 }
 
-.Lancashire {
+.podcasts__author_Lancashire {
     background-image: url("../img/Lancashire.png");
 }
 
-.podcasts__photo {
-    display: block;
+.podcasts__play {
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    transition: all .2s ease-in-out;
+}
+
+.podcasts__author_nile:hover .podcasts__play {
+    transform: scale(1.3);
+}
+
+.podcasts__author_nile:hover .podcasts__text_name::before {
+    width: 100%;
+}
+
+.podcasts__author_Beatles:hover .podcasts__play {
+    transform: scale(1.3);
+}
+
+.podcasts__author_Beatles:hover .podcasts__text_name::before {
+    width: 100%;
+}
+
+.podcasts__author_Daft:hover .podcasts__play {
+    transform: scale(1.3);
+}
+
+.podcasts__author_Daft:hover .podcasts__text_name::before {
+    width: 100%;
+}
+
+.podcasts__author_Bowie:hover .podcasts__play {
+    transform: scale(1.3);
+}
+
+.podcasts__author_Bowie:hover .podcasts__text_name::before {
+    width: 100%;
+}
+
+.podcasts__author_Counties:hover .podcasts__play {
+    transform: scale(1.3);
+}
+
+.podcasts__author_Counties:hover .podcasts__text_name::before {
+    width: 100%;
+}
+
+.podcasts__author_Cambridgeshire:hover .podcasts__play {
+    transform: scale(1.3);
+}
+
+.podcasts__author_Cambridgeshire:hover .podcasts__text_name::before {
+    width: 100%;
+}
+
+.podcasts__author_Newcastle:hover .podcasts__play {
+    transform: scale(1.3);
+}
+
+.podcasts__author_Newcastle:hover .podcasts__text_name::before {
+    width: 100%;
+}
+
+.podcasts__author_Lancashire:hover .podcasts__play {
+    transform: scale(1.3);
+}
+
+.podcasts__author_Lancashire:hover .podcasts__text_name::before {
+    width: 100%;
 }
 
 .podcasts__text {
@@ -649,6 +721,7 @@ main__section3
     font-size: 19px;
     line-height: 19px;
     position: relative;
+    margin-bottom: 11px;
 }
 
 .podcasts__text_name::before {
@@ -663,29 +736,6 @@ main__section3
     transition: width 1s;
 }
 
-/* .podcasts__text_name:hover::before {
-    width: 100%;
-} */
-
-.podcasts__play_nile:hover .podcasts__text_name::before .podcasts__play{
-    width: 100%;
-    transform: scale(1.3) translate(-50%, -50%);
-}
-
-.podcasts__play_beatles
-
-.podcasts__play_daft
-
-.podcasts__play_david
-
-.podcasts__play_counties
-
-.podcasts__play_cambridgeshire
-
-.podcasts__play_newcastle
-
-.podcasts__play_lancashire
-
 .podcasts__text_name {
     display: block;
     margin-bottom: 11px;
@@ -698,20 +748,11 @@ main__section3
     margin-bottom: 129px;
 }
 
-.podcasts__play {
-    width: 25px;
-    height: 25px;
-    background-size: contain;
-    margin-bottom: 30px;
-    transition: all .2s ease-in-out;
-}
-
 /* ############################################################################
 
 main__section4
 
 ############################################################################ */
-
 
 .section__schedule {
     padding-top: 112px;
@@ -824,6 +865,7 @@ main__section4
 }
 
 .schedule__radio-name {
+    display: block;
     width: 224px;
     padding-top: 29px;
     padding-left: 32px;
@@ -832,7 +874,6 @@ main__section4
 }
 
 .radio__name {
-    display: block;
     color: #fefefe;
     font-size: 17px;
     margin-bottom: 9px;
@@ -852,7 +893,7 @@ main__section4
     transition: width 0.3s;
 }
 
-.radio__name:hover::before {
+.radio:hover .radio__name::before {
     width: 100%;
     transition: width 0.3s;    
 }
@@ -1281,7 +1322,7 @@ footer
     color: #c1c3da;
     grid-row: 3/4;
     margin-bottom: 48px;
-    display: flex;
+    display: flex;1
 }
 
 /* .footer__lang {
