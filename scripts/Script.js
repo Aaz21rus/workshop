@@ -1,5 +1,17 @@
 $(document).ready( function() {
+
+    $('.search').on('click', function(){
+        $('.header__search').toggleClass('header__search_active');
+    });
     
+    $('.basket').on('click', function(){
+        $('.basket-wrapper').toggleClass('basket-wrapper_active');
+    });
+
+    $('.basket-wrapper__close').on('click', function(){
+        $('.basket-wrapper').removeClass('basket-wrapper_active');
+    });
+
     $('select').styler();
 
     var mySwiper = new Swiper ('.swiper-container', {
