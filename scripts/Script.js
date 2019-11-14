@@ -5,12 +5,16 @@ $(document).ready( function() {
     });
     
     $('.basket').on('click', function(){
-        $('.basket-wrapper').toggleClass('basket-wrapper_active');
+        $('.header__basket-right-side').toggleClass('header__basket-right-side_active');
     });
 
-    $('.basket-wrapper__close').on('click', function(){
-        $('.basket-wrapper').removeClass('basket-wrapper_active');
+    $('.basket-right-side__close').on('click', () =>{
+        $('.header__basket-right-side').removeClass('header__basket-right-side_active');
     });
+
+    // $('.basket-wrapper__close').on('click', function(){
+    //     $('.basket-wrapper').removeClass('basket-wrapper_active');
+    // });
 
     $('select').styler();
 
