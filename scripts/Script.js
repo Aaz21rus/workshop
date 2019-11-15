@@ -12,6 +12,10 @@ $(document).ready( function() {
         $('.header__basket-right-side').removeClass('header__basket-right-side_active');
     });
 
+    $('.header__burger').on('click', () =>{
+        $('.header__menu-nav').toggleClass('header__menu-nav_active');
+    });
+
     // $('.basket-wrapper__close').on('click', function(){
     //     $('.basket-wrapper').removeClass('basket-wrapper_active');
     // });

@@ -51,6 +51,9 @@ button {
     cursor: pointer;
     outline: none;
 }
+body {
+    min-width: 320px;
+}
 
 /* ############################################################################
 
@@ -63,6 +66,17 @@ Header
     position: fixed;
     width: 100%;
     z-index: 1000;
+}
+
+@media (max-width: 1355px) {
+    .header {
+        padding: 0 20px;
+    }
+}
+
+.center1920 {
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .center1690 {
@@ -89,10 +103,64 @@ Header
     margin-right: 135px;
 }
 
+@media (max-width: 1355px) {
+    .header__logo {
+        display: none;
+    }
+}
+
 .header__nav {
     height: 100%;
     display: inline-flex;
     align-items: center;
+}
+
+@media (max-width: 1355px) {
+    .header__nav {
+        display: none;
+    }
+}
+
+.header__burger {
+    display: none;
+}
+
+@media (max-width: 1355px) {
+    .header__burger {
+        display: block;
+    }
+}
+
+.burger {  
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.burger__line {
+    width: 35px;
+    height: 5px;
+    margin-bottom: 5px;
+    background-color: #ffffff;
+}
+
+.header__menu-nav {
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    background-color: #3d466a;
+    left: 0;
+    z-index: 23;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in;
+    padding-top: 140px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header__menu-nav_active {
+    transform: translateX(0);
+
 }
 
 .nav__menu {
