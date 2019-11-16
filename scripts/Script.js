@@ -13,12 +13,8 @@ $(document).ready( function() {
     });
 
     $('.header__burger').on('click', () =>{
-        $('.header__menu-nav').toggleClass('header__menu-nav_active');
+        $('.nav__menu').toggleClass('nav__menu_active');
     });
-
-    // $('.basket-wrapper__close').on('click', function(){
-    //     $('.basket-wrapper').removeClass('basket-wrapper_active');
-    // });
 
     $('select').styler();
 
@@ -33,6 +29,24 @@ $(document).ready( function() {
         navigation: {
         nextEl: '.listen__button_right',
         prevEl: '.listen__button_left',
+        },
+
+        breakpoints: {
+            1355: {
+                slidesPerView: 5
+            },
+
+            980: {
+                slidesPerView: 4
+            },
+
+            685: {
+                slidesPerView: 2
+            },
+
+            320: {
+                slidesPerView: 1
+            },
         },
     });
 
