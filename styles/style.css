@@ -69,12 +69,6 @@ Header
     z-index: 1000;
 }
 
-@media (max-width: 1355px) {
-    .header {
-        padding: 0 20px;
-    }
-}
-
 .center1690 {
     max-width: 1690px;
     min-width: 320px;
@@ -88,6 +82,19 @@ Header
     height: 84px;
     justify-content: space-between;
     position: relative;
+}
+
+@media (max-width: 650px) {
+    .header__center {
+        width: 280px;
+    }
+}
+
+@media (max-width: 1355px) { 
+    .header__center {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 .header__left-side {
@@ -110,12 +117,6 @@ Header
     height: 100%;
     display: inline-flex;
     align-items: center;
-}
-
-@media (max-width: 1355px) {
-    .header__nav {
-        /* display: none; */
-    }
 }
 
 .header__burger {
