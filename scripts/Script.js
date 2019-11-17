@@ -59,8 +59,27 @@ $(document).ready( function() {
 
         // Navigation arrows
         navigation: {
-        nextEl: '.v_right',
-        prevEl: '.v_left',
+        nextEl: '.v_right2',
+        prevEl: '.v_left2',
+        },
+
+        breakpoints: {
+            1355: {
+                spaceBetween: 30
+            },
+
+            980: {
+                slidesPerView: 4,
+                spaceBetween: 5
+            },
+
+            685: {
+                slidesPerView: 2
+            },
+
+            320: {
+                slidesPerView: 1
+            },
         },
     });
 
