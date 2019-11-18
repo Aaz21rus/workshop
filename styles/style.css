@@ -152,16 +152,15 @@ Header
 @media (max-width: 1355px) {
     .nav__menu {
         position: fixed;
-        display: block;
+        display: none;
         top: 84px;
         left: 20px;
-        opacity: 0;
         /* transform: translateY(-100%); */
-        transition: opacity 0.3s;
+        /* transition: display 0.3s; */
     }
 
     .nav__menu_active {
-        opacity: 1;
+        display: block;
     }
 }
 
@@ -1085,6 +1084,14 @@ main__section4
 .faded.in {
     opacity: 1;
     transition: opacity 0.3s;
+}
+
+.audio_hidden {
+    position: absolute;
+    clip: rect(0,0,0,0);
+    width: 1px;
+    height: 1px;
+    
 }
 
 .schedule__radio-name {

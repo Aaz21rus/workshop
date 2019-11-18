@@ -164,4 +164,20 @@ $(document).ready( function() {
         }, 300);
     });
 
+    $('.schedule__radio-name').on('click', function(event){
+        event.preventDefault();
+        let src = $(this).attr('data-src');
+        // console.log($(this).attr('data-src'));
+
+        // let next = $(this).prev().find('audio');
+        // console.log($(this).prev()); 
+        $(this).prev().attr('src', src);
+        if (!$(this).attr('data-played')) {
+            $(this).prev().find('audio').attr('src', src).get(0).play();
+            $(this).attr('data-played', 'true');
+        } else {
+            $(this).prev().find('audio').attr('src', src).get(0).pause();
+            $(this).removeAttr('data-played');
+        }
+    });
 });
