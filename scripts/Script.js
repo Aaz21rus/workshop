@@ -168,10 +168,32 @@ $(document).ready( function() {
         event.preventDefault();
         let src = $(this).attr('data-src');
         if (!$(this).attr('data-played')) {
-            $(this).parents('.schedule__radio').find('audio').attr('src', src).get(0).play();
+            $(this).parents('.main__section').find('audio').attr('src', src).get(0).play();
             $(this).attr('data-played', 'true');
         } else {
-            $(this).parents('.schedule__radio').find('audio').attr('src', src).get(0).pause();
+            $(this).parents('.main__section').find('audio').attr('src', src).get(0).pause();
+            $(this).removeAttr('data-played');
+        }
+    });
+
+    $('.video__play').on('click', function(){
+        let src2 = $(this).attr('data-src');
+        if (!$(this).attr('data-played')) {
+            $(this).prev().attr('src', src2).get(0).play();
+            $(this).attr('data-played', 'true');
+        } else {
+            $(this).prev().attr('src', src2).get(0).pause();
+            $(this).removeAttr('data-played');
+        }
+    });
+
+    $('.video__run').on('click', function(){
+        let src3 = $(this).attr('data-src');
+        if (!$(this).attr('data-played')) {
+            $(this).parents('.video__menu').find('audio').attr('src', src3).get(0).play();
+            $(this).attr('data-played', 'true');
+        } else {
+            $(this).parents('.video__menu').find('audio').attr('src', src3).get(0).pause();
             $(this).removeAttr('data-played');
         }
     });

@@ -1270,6 +1270,11 @@ main__section5
     background-position: center;
     border: none;
     grid-row: 1/3;
+    transition: all 0.3s;
+}
+
+.video__play:hover {
+    transform: scale(1.3);
 }
 
 .video__name {
