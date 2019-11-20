@@ -10,6 +10,21 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <div class="form-wrapper">
+        <form class="form">
+            <input type="text" placeholder="Name" class="form__name">
+            <input type="password" placeholder="password" class="form__password">
+            <input type="submit" class="form__submit">
+        </form>
+    </div>
+    <div class="form-signup">
+        <form class="form">
+            <input type="text" placeholder="Name" class="form__name">
+            <input type="password" placeholder="password" class="form__password">
+            <input type="password" placeholder="confirm password" class="form__password">
+            <input type="button" class="form__signup">
+        </form>
+    </div>
     <header class="header">
         <div class="center1690 header__center">
             <div class="header__left-side">
@@ -219,6 +234,7 @@
         </div>
     </header>
     <main class="main">
+        <audio src="#" controls class="audio_hidden"></audio>
         <aside class="header__basket-right-side basket-right-side">
             <button aria-label="close" class="basket-right-side__close"></button>
             <ol class="chart__list">
@@ -562,7 +578,6 @@
                         <button aria-label="show-schedule" data-class=".sunday" data-day="SUNDAY" class="schedule__day">SUNDAY</button>
                     </li>
                 </ul>
-                <audio src="#" controls class="audio_hidden"></audio>
                 <ul class="schedule__radio monday faded in schedule__radio_none schedule__radio_active">
                     <li class="">                       
                         <a href="#" data-src="media/Mysteries.mp3" class="schedule__radio-name radio">
@@ -1161,7 +1176,6 @@
             <div class="section__video video center">
                 <h2 class="video__title title lines">Video Story</h2>
                 <div class="video__author">
-                    <audio src="#" controls class="audio_hidden"></audio>
                     <button aria-label="button-play" data-src="media/Mysteries.mp3" class="video__play"></button>
                     <h3 class="video__name">Wiz Khalifa</h3>
                     <p class="video__description">See You Again ft. Charlie Puth<br> 
@@ -1169,9 +1183,7 @@
                 </div>
                 <div class="footer__swiper">
                     <div class="video__menu swiper-container">
-                        <audio src="#" controls class="audio_hidden"></audio>
                         <ul class="video__picture swiper-wrapper">
-                            <audio src="#" controls class="audio_hidden"></audio>
                             <li class="video__img swiper-slide">
                                 <button aria-label="button-play" data-src="media/Mysteries.mp3" class="video__run play"></button>
                                 <p class="video__text">OneRepublic</p>
@@ -1224,7 +1236,7 @@
                             <div class="chart__photo"></div>
                             <p class="chart__name">Sicko Mode</p>
                             <p class="chart__prop">Travis Scott</p>
-                            <button aria-label="play" data-num=".one" class="chart__play play"></button>
+                            <button aria-label="play" data-num=".one" data-video="https://www.youtube.com/embed/8dQv9QxsLsI" class="chart__play play"></button>
                             <button aria-label="basket" class="chart__basket basket">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
                                     <g>
@@ -1235,7 +1247,7 @@
                                 </svg>
                             </button>
                         </li>
-                        <li class="chart__unit unit">
+                        <li data-video="https://www.youtube.com/embed/8dQv9QxsLsI" class="chart__unit unit">
                             <div class="chart__photo"></div>
                             <p class="chart__name">Lucid Dreams</p>
                             <p class="chart__prop">Juice WRLD</p>
@@ -1250,7 +1262,7 @@
                                 </svg>
                             </button>
                         </li>
-                        <li class="chart__unit unit">
+                        <li data-video="https://www.youtube.com/embed/8dQv9QxsLsI" class="chart__unit unit">
                             <div class="chart__photo"></div>
                             <p class="chart__name">Happier</p>
                             <p class="chart__prop">Marshmello & Bastille</p>
@@ -1265,7 +1277,7 @@
                                 </svg>
                             </button>
                         </li>
-                        <li class="chart__unit unit">
+                        <li data-video="https://www.youtube.com/embed/8dQv9QxsLsI" class="chart__unit unit">
                             <div class="chart__photo"></div>
                             <p class="chart__name">Better Now</p>
                             <p class="chart__prop">Post Malone</p>
@@ -1282,7 +1294,7 @@
                         </li> 
                     </ol>
                     <div class="chart__description one smooth show chart__description_active">
-                        <iframe src="https://youtu.be/LOLPS32nWsg" class="chart__video"></iframe>
+                        <iframe src="#" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="chart__video"></iframe>
                         <p class="chart__info">Juice WRLD's "Lucid Dreams" | Watch Now!</p>
                         <div class="chart__positions">
                             <div class="chart__week last">
@@ -1300,7 +1312,7 @@
                         </div>
                     </div>
                     <div class="chart__description two smooth">
-                        <iframe src="https://youtu.be/LOLPS32nWsg" class="chart__video"></iframe>
+                        <iframe width="560" height="315" src="#" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="chart__video"></iframe>
                         <p class="chart__info">Juice WRLD's "Lucid Dreams" | Watch Now!</p>
                         <div class="chart__positions">
                             <div class="chart__week last">
@@ -1318,7 +1330,7 @@
                         </div>
                     </div>
                     <div class="chart__description three smooth">
-                        <iframe src="https://youtu.be/LOLPS32nWsg" class="chart__video"></iframe>
+                        <iframe width="560" height="315" src="#" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="chart__video"></iframe>
                         <p class="chart__info">Juice WRLD's "Lucid Dreams" | Watch Now!</p>
                         <div class="chart__positions">
                             <div class="chart__week last">
@@ -1336,7 +1348,7 @@
                         </div>
                     </div>
                     <div class="chart__description four smooth">
-                        <iframe src="https://youtu.be/LOLPS32nWsg" class="chart__video"></iframe>
+                        <iframe width="560" height="315" src="#" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="chart__video"></iframe>
                         <p class="chart__info">Juice WRLD's "Lucid Dreams" | Watch Now!</p>
                         <div class="chart__positions">
                             <div class="chart__week last">

@@ -156,22 +156,41 @@ $(document).ready( function() {
 
     $('.chart__play').on('click', function(){
         let number = $(this).attr('data-num');
+
+        let video = $(this).attr('data-video');   
+
+        // let frame = $(this).parents('.chart__units').find('.chart__description_active iframe');
+
+        // console.log(frame);
+        
+        // if ($(this).parents('.chart__units').find('.chart__description_active iframe').attr('src', '#')) {
+        //     $(this).parents('.chart__units').find('.chart__description_active iframe').attr('src', video);
+        //     // $(this).attr('data-played', 'true');
+        // } else {
+        //     $(this).parents('.chart__units').find('.chart__description_active iframe').attr('src', video);
+        //     // $(this).removeAttr('data-played');
+        // }
+        
+
         $('.chart__description').removeClass('chart__description_active').removeClass('show');
         $(number).addClass('chart__description_active');
             
         setTimeout(function(){
             $(number).addClass('show');
         }, 300);
+
+        $(this).parents('.chart__units').find('.chart__description_active iframe').attr('src', video);
+
     });
 
     $('.schedule__radio-name').on('click', function(event){
         event.preventDefault();
         let src = $(this).attr('data-src');
         if (!$(this).attr('data-played')) {
-            $(this).parents('.main__section').find('audio').attr('src', src).get(0).play();
+            $(this).parents('.main').find('audio').attr('src', src).get(0).play();
             $(this).attr('data-played', 'true');
         } else {
-            $(this).parents('.main__section').find('audio').attr('src', src).get(0).pause();
+            $(this).parents('.main').find('audio').attr('src', src).get(0).pause();
             $(this).removeAttr('data-played');
         }
     });
@@ -179,10 +198,10 @@ $(document).ready( function() {
     $('.video__play').on('click', function(){
         let src2 = $(this).attr('data-src');
         if (!$(this).attr('data-played')) {
-            $(this).prev().attr('src', src2).get(0).play();
+            $(this).parents('.main').find('audio').attr('src', src2).get(0).play();
             $(this).attr('data-played', 'true');
         } else {
-            $(this).prev().attr('src', src2).get(0).pause();
+            $(this).parents('.main').find('audio').attr('src', src2).get(0).pause();
             $(this).removeAttr('data-played');
         }
     });
@@ -190,11 +209,19 @@ $(document).ready( function() {
     $('.video__run').on('click', function(){
         let src3 = $(this).attr('data-src');
         if (!$(this).attr('data-played')) {
-            $(this).parents('.video__menu').find('audio').attr('src', src3).get(0).play();
+            $(this).parents('.main').find('audio').attr('src', src3).get(0).play();
             $(this).attr('data-played', 'true');
         } else {
-            $(this).parents('.video__menu').find('audio').attr('src', src3).get(0).pause();
+            $(this).parents('.main').find('audio').attr('src', src3).get(0).pause();
             $(this).removeAttr('data-played');
         }
+    });
+
+    $('.sign_in').on('click', function(){
+        $('.form-wrapper').toggleClass('form-wrapper_active');
+    });
+
+    $('.sign_up').on('click', function(){
+        $('.form-signup').toggleClass('form-wrapper_active');
     });
 });
