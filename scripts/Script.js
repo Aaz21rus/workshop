@@ -224,4 +224,8 @@ $(document).ready( function() {
     $('.sign_up').on('click', function(){
         $('.form-signup').toggleClass('form-wrapper_active');
     });
+
+    $('.form-signup').on('click', function(){
+        $('.form-signup').removeClass('form-wrapper_active');
+    });
 });
