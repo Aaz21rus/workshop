@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>home</title>
+        <link rel="stylesheet" href="styles/swiper.css">
+        <link rel="stylesheet" href="styles/jquery.formstyler.css">
+        <link rel="stylesheet" href="styles/blog.css">
+    </head>
+    <body>
+        <div class="form-wrapper">
+            <form class="form">
+                <input type="text" placeholder="Name" class="form__name">
+                <input type="password" placeholder="password" class="form__password">
+                <input type="submit" class="form__submit">
+            </form>
+        </div>
+        <div class="form-signup">
+            <form class="form form_signup">
+                <input type="text" placeholder="Name" class="form__name">
+                <input type="password" placeholder="password" class="form__password">
+                <input type="password" placeholder="confirm password" class="form__password">
+                <input type="submit" value="Sign up" class="form__signup">
+            </form>
+        </div>
+        <header class="header">
+            <div class="center1690 header__center">
+                <div class="header__left-side">
+                    <a href="#"><img src="img/Logo.png" alt="Logo" class="header__logo logo"></a>
+                    <div class="header__burger burger">
+                        <div class="burger__line burger__line_one"></div>
+                        <div class="burger__line burger__line_two"></div>
+                        <div class="burger__line burger__line_three"></div>
+                    </div>                
+                    <nav class="header__nav nav">
+                        <ul class="nav__menu">
+                            <li>
+                                <a data-but="Home" href="#" class="nav__item but">
+                                    <svg class="nav__lines but" xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19">
+                                        <defs>
+                                            <linearGradient class="wra" x1="16" x2="0" y1="9" y2="10" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0" stop-color="#ff7d56"/>
+                                                <stop offset="1" stop-color="#ff498e"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <g>
+                                            <g>
+                                                <path fill="#fd2954" d="M1 17a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7-2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM0 0h2v15H0zm7 0h2v11H7zm7 0h2v9h-2z"/>
+                                                <path fill="url(.wra)" d="M1 17a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7-2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM0 0h2v15H0zm7 0h2v11H7zm7 0h2v9h-2z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a data-but="Blog" href="#" class="nav__item but">
+                                    <svg class="nav__lines but" xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19">
+                                        <defs>
+                                            <linearGradient class="wra" x1="16" x2="0" y1="9" y2="10" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0" stop-color="#ff7d56"/>
+                                                <stop offset="1" stop-color="#ff498e"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <g>
+                                            <g>
+                                                <path fill="#fd2954" d="M1 17a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7-2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM0 0h2v15H0zm7 0h2v11H7zm7 0h2v9h-2z"/>
+                                                <path fill="url(.wra)" d="M1 17a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7-2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM0 0h2v15H0zm7 0h2v11H7zm7 0h2v9h-2z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    Blog
+                                </a>
+                            </li>
+                            <li>
+                                <a data-but="Shows" href="#" class="nav__item but">
+                                    <svg class="nav__lines but" xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19">
+                                        <defs>
+                                            <linearGradient class="wra" x1="16" x2="0" y1="9" y2="10" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0" stop-color="#ff7d56"/>
+                                                <stop offset="1" stop-color="#ff498e"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <g>
+                                            <g>
+                                                <path fill="#fd2954" d="M1 17a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7-2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM0 0h2v15H0zm7 0h2v11H7zm7 0h2v9h-2z"/>
+                                                <path fill="url(.wra)" d="M1 17a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7-2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM0 0h2v15H0zm7 0h2v11H7zm7 0h2v9h-2z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    Shows
+                                </a>
+                            </li>
+                            <li>
+                                <a data-but="Charts" href="#" class="nav__item but">
+                                    <svg class="nav__lines but" xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19">
+                                        <defs>
+                                            <linearGradient class="wra" x1="16" x2="0" y1="9" y2="10" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0" stop-color="#ff7d56"/>
+                                                <stop offset="1" stop-color="#ff498e"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <g>
+                                            <g>
+                                                <path fill="#fd2954" d="M1 17a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7-2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM0 0h2v15H0zm7 0h2v11H7zm7 0h2v9h-2z"/>
+                                                <path fill="url(.wra)" d="M1 17a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7-2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM0 0h2v15H0zm7 0h2v11H7zm7 0h2v9h-2z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    Charts
+                                </a>
+                            </li>
+                            <li>
+                                <a data-but="Team" href="#" class="nav__item but">
+                                    <svg class="nav__lines but" xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19">
+                                        <defs>
+                                            <linearGradient class="wra" x1="16" x2="0" y1="9" y2="10" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0" stop-color="#ff7d56"/>
+                                                <stop offset="1" stop-color="#ff498e"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <g>
+                                            <g>
+                                                <path fill="#fd2954" d="M1 17a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7-2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM0 0h2v15H0zm7 0h2v11H7zm7 0h2v9h-2z"/>
+                                                <path fill="url(.wra)" d="M1 17a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7-2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM0 0h2v15H0zm7 0h2v11H7zm7 0h2v9h-2z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    Team
+                                </a>
+                            </li>
+                            <li>
+                                <a data-but="Video" href="#" class="nav__item but">
+                                    <svg class="nav__lines but" xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19">
+                                        <defs>
+                                            <linearGradient class="wra" x1="16" x2="0" y1="9" y2="10" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0" stop-color="#ff7d56"/>
+                                                <stop offset="1" stop-color="#ff498e"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <g>
+                                            <g>
+                                                <path fill="#fd2954" d="M1 17a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7-2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM0 0h2v15H0zm7 0h2v11H7zm7 0h2v9h-2z"/>
+                                                <path fill="url(.wra)" d="M1 17a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7-2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM0 0h2v15H0zm7 0h2v11H7zm7 0h2v9h-2z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    Video
+                                </a>
+                            </li>
+                            <li>
+                                <a data-but="Podcasts" href="#" class="nav__item but">
+                                    <svg class="nav__lines but" xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19">
+                                        <defs>
+                                            <linearGradient class="wra" x1="16" x2="0" y1="9" y2="10" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0" stop-color="#ff7d56"/>
+                                                <stop offset="1" stop-color="#ff498e"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <g>
+                                            <g>
+                                                <path fill="#fd2954" d="M1 17a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7-2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM0 0h2v15H0zm7 0h2v11H7zm7 0h2v9h-2z"/>
+                                                <path fill="url(.wra)" d="M1 17a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7-2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM0 0h2v15H0zm7 0h2v11H7zm7 0h2v9h-2z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    Podcasts
+                                </a>
+                            </li>
+                            <li>
+                                <a data-but="Event" href="#" class="nav__item but">
+                                    <svg class="nav__lines but" xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19">
+                                        <defs>
+                                            <linearGradient class="wra" x1="16" x2="0" y1="9" y2="10" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0" stop-color="#ff7d56"/>
+                                                <stop offset="1" stop-color="#ff498e"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <g>
+                                            <g>
+                                                <path fill="#fd2954" d="M1 17a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7-2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM0 0h2v15H0zm7 0h2v11H7zm7 0h2v9h-2z"/>
+                                                <path fill="url(.wra)" d="M1 17a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7-2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM0 0h2v15H0zm7 0h2v11H7zm7 0h2v9h-2z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    Event
+                                </a>
+                            </li>
+                            <li>
+                                <a data-but="Pages" href="#" class="nav__item but">
+                                    <svg class="nav__lines but" xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19">
+                                        <defs>
+                                            <linearGradient class="wra" x1="16" x2="0" y1="9" y2="10" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0" stop-color="#ff7d56"/>
+                                                <stop offset="1" stop-color="#ff498e"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <g>
+                                            <g>
+                                                <path fill="#fd2954" d="M1 17a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7-2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM0 0h2v15H0zm7 0h2v11H7zm7 0h2v9h-2z"/>
+                                                <path fill="url(.wra)" d="M1 17a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7-2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM0 0h2v15H0zm7 0h2v11H7zm7 0h2v9h-2z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    Pages
+                                </a>
+                            </li>
+                        </ul>          
+                    </nav>
+                </div>            
+                <div class="header__right-side">
+                    <input type="text" placeholder="search" class="header__search">
+                    <button aria-label="button-basket" class="header__button basket">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
+                            <g>
+                                <g>
+                                    <path fill="#fff" d="M20.168 17.274c0 1.503-1.231 2.725-2.744 2.725-1.513 0-2.744-1.222-2.744-2.725 0-1.502 1.231-2.725 2.744-2.725 1.513 0 2.744 1.223 2.744 2.725zm-1.646 0c0-.6-.493-1.09-1.098-1.09-.605 0-1.098.49-1.098 1.09 0 .601.493 1.09 1.098 1.09.605 0 1.098-.489 1.098-1.09zm3.46-12.556l-2.003 8.039a.821.821 0 0 1-.799.62H6.366a.822.822 0 0 1-.8-.627L2.89 1.634H.823A.82.82 0 0 1 0 .816.82.82 0 0 1 .823 0H3.54c.38 0 .712.26.8.628l.741 3.078h16.102a.815.815 0 0 1 .799 1.013zm-1.85.622H5.474l1.54 6.403h11.521zm-9.925 11.934c0 1.503-1.23 2.725-2.744 2.725-1.513 0-2.743-1.222-2.743-2.725 0-1.502 1.23-2.725 2.743-2.725 1.514 0 2.744 1.223 2.744 2.725zm-1.646 0c0-.6-.492-1.09-1.098-1.09-.605 0-1.097.49-1.097 1.09 0 .601.492 1.09 1.097 1.09.606 0 1.098-.489 1.098-1.09z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </button>
+                    <button aria-label="button-search" class="header__button search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                            <g>
+                                <g>
+                                    <path fill="#fff" d="M19.742 19.74a.832.832 0 0 1-1.179 0l-4.805-4.8a8.38 8.38 0 0 1-5.335 1.905A8.423 8.423 0 0 1 0 8.422a8.423 8.423 0 1 1 14.937 5.34l4.805 4.804a.827.827 0 0 1 0 1.175zM15.173 8.423c0-3.72-3.03-6.751-6.75-6.751a6.759 6.759 0 0 0-6.75 6.75c0 3.72 3.026 6.748 6.75 6.748 3.72 0 6.75-3.027 6.75-6.747z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </button>   
+                </div>
+            </div>
+        </header>
+        <main>
+            <aside class="header__basket-right-side basket-right-side">
+                <button aria-label="close" class="basket-right-side__close"></button>
+                <ol class="chart__list">
+                    <li class="basket__unit unit">
+                        <div class="chart__photo"></div>
+                        <p class="chart__name">Sicko Mode</p>
+                        <p class="chart__prop">Travis Scott</p>
+                        <button data-num=".one" aria-label="play" class="chart__play play"></button>
+                        <button aria-label="basket" class="chart__basket basket">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
+                                <g>
+                                    <g>
+                                        <path fill="#fff" d="M20.168 17.274c0 1.503-1.231 2.725-2.744 2.725-1.513 0-2.744-1.222-2.744-2.725 0-1.502 1.231-2.725 2.744-2.725 1.513 0 2.744 1.223 2.744 2.725zm-1.646 0c0-.6-.493-1.09-1.098-1.09-.605 0-1.098.49-1.098 1.09 0 .601.493 1.09 1.098 1.09.605 0 1.098-.489 1.098-1.09zm3.46-12.556l-2.003 8.039a.821.821 0 0 1-.799.62H6.366a.822.822 0 0 1-.8-.627L2.89 1.634H.823A.82.82 0 0 1 0 .816.82.82 0 0 1 .823 0H3.54c.38 0 .712.26.8.628l.741 3.078h16.102a.815.815 0 0 1 .799 1.013zm-1.85.622H5.474l1.54 6.403h11.521zm-9.925 11.934c0 1.503-1.23 2.725-2.744 2.725-1.513 0-2.743-1.222-2.743-2.725 0-1.502 1.23-2.725 2.743-2.725 1.514 0 2.744 1.223 2.744 2.725zm-1.646 0c0-.6-.492-1.09-1.098-1.09-.605 0-1.097.49-1.097 1.09 0 .601.492 1.09 1.097 1.09.606 0 1.098-.489 1.098-1.09z"/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </button>
+                    </li>
+                </ol>
+            </aside>
+            <section class="intro section__intro">
+                <h1 class="intro__title">blog</h1>
+                <div class="intro__line"></div>
+                <p class="intro__index">Home  | Blog Right</p>   
+            </section>
+            <section class="section_gray">
+                <div class="section__blog blog center">
+                    <div class="blog__swiper">
+                        <ul class="blog__list">
+                            <li class="blog__unit">
+                                <img src="#" alt="img" class="blog__picture">
+                                <div class="blog__info">
+                                    <h2 class="blog__title">Best Radio Broadcasting Software You.</h2>
+                                    <p class="blog__text">Ne sententiae constituam eam. Paulo omnes oblique sea ea, inani persius  sea,</p>
+                                    <div class="blog__ar">
+                                        <a href="#" class="blog__link">Jamie Ashbrook</a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="47" height="10" viewBox="0 0 47 10" class="blog__arrow">
+                                        <defs>
+                                            <linearGradient id="il5ca" x1="47" x2="0" y1="5" y2="5" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0" stop-color="#ff7d56"/>
+                                                <stop offset="1" stop-color="#ff498e"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <g>
+                                            <g>
+                                                <path fill="#fff" d="M46.795 4.747L41.187.168a.646.646 0 0 0-.716-.104c-.26.111-.39.313-.39.605v3.47H.656a.628.628 0 0 0-.47.187.657.657 0 0 0-.185.48v.534a.633.633 0 0 0 .654.668h39.428V9.33c0 .28.13.48.389.605.259.112.498.07.716-.124l5.608-4.084a.69.69 0 0 0 0-.98z"/>
+                                                <path fill="url(#il5ca)" d="M46.795 4.747L41.187.168a.646.646 0 0 0-.716-.104c-.26.111-.39.313-.39.605v3.47H.656a.628.628 0 0 0-.47.187.657.657 0 0 0-.185.48v.534a.633.633 0 0 0 .654.668h39.428V9.33c0 .28.13.48.389.605.259.112.498.07.716-.124l5.608-4.084a.69.69 0 0 0 0-.98z"/>
+                                            </g>
+                                        </g>
+                                        </svg>
+                                    </div>                                
+                                </div>
+                            </li>
+                            <li class="blog__unit">
+                                <img src="#" alt="img" class="blog__picture">
+                                <div class="blog__info">
+                                    <h2 class="blog__title">Best Radio Broadcasting Software You.</h2>
+                                    <p class="blog__text">Ne sententiae constituam eam. Paulo omnes oblique sea ea, inani persius  sea,</p>
+                                    <div class="blog__ar">
+                                        <a href="#" class="blog__link">Jamie Ashbrook</a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="47" height="10" viewBox="0 0 47 10" class="blog__arrow">
+                                        <defs>
+                                            <linearGradient id="il5ca" x1="47" x2="0" y1="5" y2="5" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0" stop-color="#ff7d56"/>
+                                                <stop offset="1" stop-color="#ff498e"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <g>
+                                            <g>
+                                                <path fill="#fff" d="M46.795 4.747L41.187.168a.646.646 0 0 0-.716-.104c-.26.111-.39.313-.39.605v3.47H.656a.628.628 0 0 0-.47.187.657.657 0 0 0-.185.48v.534a.633.633 0 0 0 .654.668h39.428V9.33c0 .28.13.48.389.605.259.112.498.07.716-.124l5.608-4.084a.69.69 0 0 0 0-.98z"/>
+                                                <path fill="url(#il5ca)" d="M46.795 4.747L41.187.168a.646.646 0 0 0-.716-.104c-.26.111-.39.313-.39.605v3.47H.656a.628.628 0 0 0-.47.187.657.657 0 0 0-.185.48v.534a.633.633 0 0 0 .654.668h39.428V9.33c0 .28.13.48.389.605.259.112.498.07.716-.124l5.608-4.084a.69.69 0 0 0 0-.98z"/>
+                                            </g>
+                                        </g>
+                                        </svg>
+                                    </div>                                
+                                </div>
+                            </li>
+                            <li class="blog__unit">
+                                <img src="#" alt="img" class="blog__picture">
+                                <div class="blog__info">
+                                    <h2 class="blog__title">Best Radio Broadcasting Software You.</h2>
+                                    <p class="blog__text">Ne sententiae constituam eam. Paulo omnes oblique sea ea, inani persius  sea,</p>
+                                    <div class="blog__ar">
+                                        <a href="#" class="blog__link">Jamie Ashbrook</a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="47" height="10" viewBox="0 0 47 10" class="blog__arrow">
+                                        <defs>
+                                            <linearGradient id="il5ca" x1="47" x2="0" y1="5" y2="5" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0" stop-color="#ff7d56"/>
+                                                <stop offset="1" stop-color="#ff498e"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <g>
+                                            <g>
+                                                <path fill="#fff" d="M46.795 4.747L41.187.168a.646.646 0 0 0-.716-.104c-.26.111-.39.313-.39.605v3.47H.656a.628.628 0 0 0-.47.187.657.657 0 0 0-.185.48v.534a.633.633 0 0 0 .654.668h39.428V9.33c0 .28.13.48.389.605.259.112.498.07.716-.124l5.608-4.084a.69.69 0 0 0 0-.98z"/>
+                                                <path fill="url(#il5ca)" d="M46.795 4.747L41.187.168a.646.646 0 0 0-.716-.104c-.26.111-.39.313-.39.605v3.47H.656a.628.628 0 0 0-.47.187.657.657 0 0 0-.185.48v.534a.633.633 0 0 0 .654.668h39.428V9.33c0 .28.13.48.389.605.259.112.498.07.716-.124l5.608-4.084a.69.69 0 0 0 0-.98z"/>
+                                            </g>
+                                        </g>
+                                        </svg>
+                                    </div>                                
+                                </div>
+                            </li>
+                            <li class="blog__unit">
+                                <img src="#" alt="img" class="blog__picture">
+                                <div class="blog__info">
+                                    <h2 class="blog__title">Best Radio Broadcasting Software You.</h2>
+                                    <p class="blog__text">Ne sententiae constituam eam. Paulo omnes oblique sea ea, inani persius  sea,</p>
+                                    <div class="blog__ar">
+                                        <a href="#" class="blog__link">Jamie Ashbrook</a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="47" height="10" viewBox="0 0 47 10" class="blog__arrow">
+                                        <defs>
+                                            <linearGradient id="il5ca" x1="47" x2="0" y1="5" y2="5" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0" stop-color="#ff7d56"/>
+                                                <stop offset="1" stop-color="#ff498e"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <g>
+                                            <g>
+                                                <path fill="#fff" d="M46.795 4.747L41.187.168a.646.646 0 0 0-.716-.104c-.26.111-.39.313-.39.605v3.47H.656a.628.628 0 0 0-.47.187.657.657 0 0 0-.185.48v.534a.633.633 0 0 0 .654.668h39.428V9.33c0 .28.13.48.389.605.259.112.498.07.716-.124l5.608-4.084a.69.69 0 0 0 0-.98z"/>
+                                                <path fill="url(#il5ca)" d="M46.795 4.747L41.187.168a.646.646 0 0 0-.716-.104c-.26.111-.39.313-.39.605v3.47H.656a.628.628 0 0 0-.47.187.657.657 0 0 0-.185.48v.534a.633.633 0 0 0 .654.668h39.428V9.33c0 .28.13.48.389.605.259.112.498.07.716-.124l5.608-4.084a.69.69 0 0 0 0-.98z"/>
+                                            </g>
+                                        </g>
+                                        </svg>
+                                    </div>                                
+                                </div>
+                            </li>
+                            <li class="blog__unit">
+                                <img src="#" alt="img" class="blog__picture">
+                                <div class="blog__info">
+                                    <h2 class="blog__title">Best Radio Broadcasting Software You.</h2>
+                                    <p class="blog__text">Ne sententiae constituam eam. Paulo omnes oblique sea ea, inani persius  sea,</p>
+                                    <div class="blog__ar">
+                                        <a href="#" class="blog__link">Jamie Ashbrook</a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="47" height="10" viewBox="0 0 47 10" class="blog__arrow">
+                                        <defs>
+                                            <linearGradient id="il5ca" x1="47" x2="0" y1="5" y2="5" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0" stop-color="#ff7d56"/>
+                                                <stop offset="1" stop-color="#ff498e"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <g>
+                                            <g>
+                                                <path fill="#fff" d="M46.795 4.747L41.187.168a.646.646 0 0 0-.716-.104c-.26.111-.39.313-.39.605v3.47H.656a.628.628 0 0 0-.47.187.657.657 0 0 0-.185.48v.534a.633.633 0 0 0 .654.668h39.428V9.33c0 .28.13.48.389.605.259.112.498.07.716-.124l5.608-4.084a.69.69 0 0 0 0-.98z"/>
+                                                <path fill="url(#il5ca)" d="M46.795 4.747L41.187.168a.646.646 0 0 0-.716-.104c-.26.111-.39.313-.39.605v3.47H.656a.628.628 0 0 0-.47.187.657.657 0 0 0-.185.48v.534a.633.633 0 0 0 .654.668h39.428V9.33c0 .28.13.48.389.605.259.112.498.07.716-.124l5.608-4.084a.69.69 0 0 0 0-.98z"/>
+                                            </g>
+                                        </g>
+                                        </svg>
+                                    </div>                                
+                                </div>
+                            </li>
+                            <li class="blog__unit">
+                                <img src="#" alt="img" class="blog__picture">
+                                <div class="blog__info">
+                                    <h2 class="blog__title">Best Radio Broadcasting Software You.</h2>
+                                    <p class="blog__text">Ne sententiae constituam eam. Paulo omnes oblique sea ea, inani persius  sea,</p>
+                                    <div class="blog__ar">
+                                        <a href="#" class="blog__link">Jamie Ashbrook</a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="47" height="10" viewBox="0 0 47 10" class="blog__arrow">
+                                        <defs>
+                                            <linearGradient id="il5ca" x1="47" x2="0" y1="5" y2="5" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0" stop-color="#ff7d56"/>
+                                                <stop offset="1" stop-color="#ff498e"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <g>
+                                            <g>
+                                                <path fill="#fff" d="M46.795 4.747L41.187.168a.646.646 0 0 0-.716-.104c-.26.111-.39.313-.39.605v3.47H.656a.628.628 0 0 0-.47.187.657.657 0 0 0-.185.48v.534a.633.633 0 0 0 .654.668h39.428V9.33c0 .28.13.48.389.605.259.112.498.07.716-.124l5.608-4.084a.69.69 0 0 0 0-.98z"/>
+                                                <path fill="url(#il5ca)" d="M46.795 4.747L41.187.168a.646.646 0 0 0-.716-.104c-.26.111-.39.313-.39.605v3.47H.656a.628.628 0 0 0-.47.187.657.657 0 0 0-.185.48v.534a.633.633 0 0 0 .654.668h39.428V9.33c0 .28.13.48.389.605.259.112.498.07.716-.124l5.608-4.084a.69.69 0 0 0 0-.98z"/>
+                                            </g>
+                                        </g>
+                                        </svg>
+                                    </div>                                
+                                </div>
+                            </li>             
+                        </ul>
+                        <ul class="blog__buttons">
+                            <li class="blog__but-unit"><button data-cont="1" class="blog__but">1</button></li>
+                            <li class="blog__but-unit"><button data-cont="2" class="blog__but">2</button></li>
+                            <li class="blog__but-unit"><button data-cont="3" class="blog__but">3</button></li>
+                            <li class="blog__but-unit"><button data-cont="Next" class="blog__but blog__next">Next</button></li>
+                        </ul>
+                    </div>
+                    <aside class="blog__index"></aside>
+                </div>
+            </section>
+        </main>
+        <footer class="footer section_purple">
+            <div class="footer__center center">
+                <a href="#" class="footer__logo"><img src="img/Logo_foot.png" alt="logo"></a>
+                <p class="footer__language">Language:
+                    <select name="Language:" class="footer__lang">
+                        <option value="English(UK)" selected>English(UK)</option>
+                        <option value="French(FR)">French(FR)</option>
+                        <option value="Russian(RU)">Russian(RU)</option>
+                    </select>
+                </p>
+                <div class="footer__buttons">
+                    <button aria-label="sign in" class="footer__btn sign sign_in">SIGN IN</button>
+                    <button aria-label="sign up" class="footer__btn sign sign_up">SIGN UP</button>
+                </div>
+                <h3 class="footer__service">OUR SERVICES</h3>
+                <ul class="footer__services-list">
+                    <li>
+                        <a href="#" class="footer__serv-unit">Application</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__serv-unit">UX Development</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__serv-unit">Mobile Application</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__serv-unit">E - commerce Solution</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__serv-unit">Branding Strategy</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__serv-unit">24 /7 Support</a>
+                    </li>
+                </ul>
+                <h3 class="footer__service">QUICK LINKS</h3>
+                <ul class="footer__services-list footer__serv-unit_col">
+                    <li >
+                        <a href="#" class="footer__serv-unit">Payment Options</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__serv-unit">Fee Schedule</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__serv-unit">Getting Started</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__serv-unit">Identity Verification</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__serv-unit">Card Verification</a>
+                    </li>
+                </ul>
+                <h3 class="footer__service">OUR EVENT</h3>
+                <div class="footer__events">
+                    <a href="#" class="footer__New-York">
+                        <div class="footer__time">10.00 Pm</div>
+                        <p class="footer__city">New York City</p>
+                        <p class="footer__date">05-24-2018</p>
+                    </a>
+                    <a href="#" class="footer__New-York">
+                        <div class="footer__time">12.00 Pm</div>
+                        <p class="footer__city">Los Angeles</p>
+                        <p class="footer__date">05-24-2018</p>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__rights center">
+                <div class="footer__2018">
+                    <p class="footer__copy">Copyright 2018 Radio. Designed by MegaMindLab</p>
+                    <p class="footer__privacy">Privacy Policy Terms & Condition</p>
+                </div>
+                <div class="footer__cont">
+                    <p class="footer__connect">Connect with us</p>
+                    <ul class="footer__social">
+                        <li class="footer__facebook footer__soc">
+                           <a href="#"><img src="img/facebook.svg" alt="facebook" class="footer_f"></a>
+                        </li>
+                        <li class="footer__twitter footer__soc">
+                            <a href="#"><img src="img/twitter.png" alt="twitter" class="footer__twit"></a>   
+                        </li>
+                        <li class="footer__lindkIn footer__soc">
+                            <a href="#"><img src="img/lindkin.png" alt="lindkin" class="footer__in"></a>
+                        </li>
+                        <li class="footer__Be footer__soc">
+                            <a href="#"><img src="img/Be.png" alt="be" class="footet__b"></a>
+                        </li>
+                        <li class="footer__web footer__soc">
+                            <a href="#"><img src="img/web.png" alt="web" class="footer__w"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="scripts/jquery-3.4.1.min.js"></script>
+        <script src="scripts/swiper.js"></script>
+        <script src="scripts/jquery.formstyler.min.js"></script>
+        <script src="scripts/blog.js"></script>
+    </body>
+</html>

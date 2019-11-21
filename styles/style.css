@@ -1704,6 +1704,10 @@ footer
     padding: 20px;
 }
 
+.form_signup {
+    height: 220px;
+}
+
 .form__name {
     margin-bottom: 30px;
     height: 20px;
