@@ -28,4 +28,18 @@ $(document).ready(function(){
     $('.form__signup').on('click', function(){
         $('.form-signup').removeClass('form-wrapper_active');
     });
+
+    $('.blog__but').on('click', function(){
+        $('.blog__but').removeClass('blog__but_active');
+        $(this).addClass('blog__but_active');
+
+        let data = $(this).attr('data-class');
+      
+        $('.blog__list').removeClass('blog__list_active').removeClass('in');
+        $(data).addClass('blog__list_active');
+
+        setInterval(function(){
+            $(data).addClass('in');
+        }, 300);
+    });
 });

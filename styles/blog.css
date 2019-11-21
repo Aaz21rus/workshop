@@ -466,12 +466,6 @@ main__section1
     padding-top: 19px;
 }
 
-/* ############################################################################
-
-main__section1
-
-############################################################################ */
-
 .section__blog {
     padding-top: 110px;
     padding-bottom: 110px;
@@ -550,7 +544,7 @@ main__section1
 }
 
 .blog__list {
-    display: grid;
+    display: none;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 30px;
     grid-row-gap: 60px;
@@ -561,8 +555,14 @@ main__section1
     display: grid;
 }
 
-.blog__list_none {
-    display: none;
+.faded {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.faded.in {
+    opacity: 1;
+    transition: opacity 0.3s;
 }
 
 .blog__buttons {
@@ -604,6 +604,11 @@ main__section1
 
 .blog__but:hover::before {
     transform: scaleY(1);  
+}
+
+.blog__but_active {
+    background: linear-gradient(to left, #ff7d56 0%, #ff498e 100%);
+    pointer-events: none;
 }
 
 .blog__index {
