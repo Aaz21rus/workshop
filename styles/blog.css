@@ -557,6 +557,14 @@ main__section1
     margin-bottom: 60px;
 }
 
+.blog__list_active {
+    display: grid;
+}
+
+.blog__list_none {
+    display: none;
+}
+
 .blog__buttons {
     display: flex;
 }
@@ -599,8 +607,149 @@ main__section1
 }
 
 .blog__index {
-    width: 344px;
+    width: 345px;
 }
+
+.blog__search {
+    padding: 9px 42px 9px 0;
+    background-image: url("../img/search.svg");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 303px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #2f364f;
+    width: 345px;
+    outline: none;
+    margin-bottom: 69px;
+}
+
+.blog__search::placeholder {
+    color: #e2e2e2;
+    font-family: 'Poppins Regular';
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.blog__categories {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.categories__list {
+    margin-bottom: 70px;
+}
+
+.categories__unit {
+    color: #e2e2e2;
+    font-size: 15px;
+    font-family: "Poppins Regular";
+    font-weight: 400;
+    line-height: 41px;
+    width: 345px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    border-bottom: 2px solid #2f364f;
+}
+
+.news {
+    margin-bottom: 39px;
+}
+
+.blog__news {
+    margin-bottom: 71px;
+}
+
+.news-list__item {
+    margin-bottom: 30px;
+}
+
+.news-list__item:last-child {
+    margin-bottom: 0;
+}
+
+.news-list__unit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news-list__picture {
+    width: 141px;
+    height: 103px;
+    background-color: #6f6f6f;
+}
+
+.news-list__info {
+    width: 178px;
+}
+
+.news-list__date {
+    color: #ffffff;
+    font-family: "Poppins Regular";
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 15px;
+    margin-bottom: 18px;
+}
+
+.news-list__text {
+    color: #e2e2e2;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.blog__tags {
+    margin-bottom: 16px;
+}
+
+.tags__line-one {
+    display: flex;
+    margin-bottom: 7px;
+}
+
+.tags__line-two {
+    display: flex;
+}
+
+.tag {
+    color: #dbdbdb;
+    background-color: #313959;
+    font-family: "Poppins Regular";
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.tags__business {
+    display: block;
+    padding: 18px 29px 19px 29px;
+    margin-right: 7px;
+}
+
+.tags__success {
+    display: block;
+    padding: 19px 27px 19px 25px;
+}
+
+.tags__client {
+    display: block;
+    padding: 18px 23px 16px 24px;
+    margin-right: 7px;
+
+}
+
+.tags__charity {
+    display: block;
+    padding: 18px 29px 16px 29px;
+}
+
 /* ############################################################################
 
 footer
