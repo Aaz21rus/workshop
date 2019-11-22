@@ -520,7 +520,7 @@ main__section1
     background-repeat: no-repeat;
     background-position: left center;
     opacity: 1;
-    transition: opacity 0.3s;
+    transition: opacity 1s;
 }
 
 .blog__arrow {
@@ -528,7 +528,7 @@ main__section1
     left: 0;
     bottom: 4px;
     opacity: 0;
-    transition: opacity 0.3s;
+    transition: opacity 1s;
 }
 
 .blog__ar {
