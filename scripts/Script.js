@@ -155,9 +155,7 @@ $(document).ready( function() {
     });
 
     $('.chart__play').on('click', function(){
-        let number = $(this).attr('data-num');
-        console.log(number);
-        
+        let number = $(this).attr('data-num');        
         let video = $(this).attr('data-video');
 
         $('.chart__description').removeClass('chart__description_active').removeClass('show');
@@ -168,10 +166,11 @@ $(document).ready( function() {
             $(number).addClass('show');
         }, 300);
     });
-
-    $('.chart__play').trigger('click', function(){
-        $('.chart__video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
-    });    
+    $('.chart__play').on('click', function(){
+        $('.chart__play').trigger('click', function(){
+            $(this);
+        }); 
+    });
 
     $('.schedule__radio-name').on('click', function(event){
         event.preventDefault();
