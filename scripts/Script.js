@@ -156,32 +156,22 @@ $(document).ready( function() {
 
     $('.chart__play').on('click', function(){
         let number = $(this).attr('data-num');
-
-        let video = $(this).attr('data-video');   
-
-        // let frame = $(this).parents('.chart__units').find('.chart__description_active iframe');
-
-        // console.log(frame);
+        console.log(number);
         
-        // if ($(this).parents('.chart__units').find('.chart__description_active iframe').attr('src', '#')) {
-        //     $(this).parents('.chart__units').find('.chart__description_active iframe').attr('src', video);
-        //     // $(this).attr('data-played', 'true');
-        // } else {
-        //     $(this).parents('.chart__units').find('.chart__description_active iframe').attr('src', video);
-        //     // $(this).removeAttr('data-played');
-        // }
-        
+        let video = $(this).attr('data-video');
 
         $('.chart__description').removeClass('chart__description_active').removeClass('show');
         $(number).addClass('chart__description_active');
+        $(number).find('iframe').attr('src', video);
             
         setTimeout(function(){
             $(number).addClass('show');
         }, 300);
-
-        $(this).parents('.chart__units').find('.chart__description_active iframe').attr('src', video);
-
     });
+
+    $('.chart__play').trigger('click', function(){
+        $('.chart__video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+    });    
 
     $('.schedule__radio-name').on('click', function(event){
         event.preventDefault();
