@@ -627,6 +627,14 @@ main__section2
     display: flex;
 }
 
+.blog__tags-admin li {
+    margin-right: 10px;
+}
+
+.blog__tags-admin li:last-child {
+    margin-right: 0;
+} 
+
 .blog__tag-admin {
     display: block;
     color: #adb1c0;
@@ -637,11 +645,6 @@ main__section2
     display: block;
     padding: 15px;
     border: 1px solid #30395e;
-    margin-right: 10px;
-}
-
-.blog__tag-admin:last-child {
-    margin-right: 0;
 }
 
 .blog__search {
@@ -776,7 +779,6 @@ main__section2
     display: block;
     padding: 18px 23px 16px 24px;
     margin-right: 7px;
-
 }
 
 .tags__charity {
