@@ -769,26 +769,27 @@ main__section2
     line-height: 15px;
     background-color: transparent;
     padding: 18px 26px 19px 33px;
-    /* position: relative; */
+    position: relative;
     cursor: pointer;
+    z-index: 0;
 }
 
 .form__sent::before {
-    content: 'send now';
-    /* position: absolute; */
-    /* left: 0; */
-    /* top: 0; */
-    /* width: 100%; */
-    /* height: 100%; */
-    /* z-index: -1; */
-    /* transform-origin: 0 0; */
-    /* transform: scaleY(0); */
-    /* background: linear-gradient(to left, #ff7d56 0%, #ff498e 100%); */
-    /* transition: transform 0.5s;     */
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform-origin: 0 0;
+    transform: scaleY(0);
+    background: linear-gradient(to left, #ff7d56 0%, #ff498e 100%);
+    transition: transform 0.5s;    
 }
 
-.form__sent:hover {
-    background: linear-gradient(to left, #ff7d56 0%, #ff498e 100%); /* transform: scaleY(1); */
+.form__sent:hover::before {
+    transform: scaleY(1);
 }
 
 .blog__search {

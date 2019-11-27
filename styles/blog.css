@@ -497,6 +497,7 @@ main__section2
 @media (max-width: 1190px) {
     .section__blog {
         width: 810px;
+        flex-direction: column;
     }
 }
 
@@ -505,6 +506,12 @@ main__section2
         width: 410px;
     }
 }
+
+/* @media (max-width: 795px) {
+    .section__blog {
+        display: block;
+    }
+} */
 
 @media (max-width: 420px) {
     .section__blog {
@@ -684,9 +691,9 @@ main__section2
     width: 345px;
 }
 
-@media (max-width: 1190px) {
+@media (max-width: 795px) {
     .blog__index {
-        display: none;
+        
     }
 }
 
