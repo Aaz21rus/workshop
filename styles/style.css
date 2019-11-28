@@ -71,10 +71,10 @@ Header
 
 .center1690 {
     max-width: 1690px;
-    min-width: 320px;
+    min-width: 280px;
     margin: 0 auto;
     position: relative;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .header__center {
