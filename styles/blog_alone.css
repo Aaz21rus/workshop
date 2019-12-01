@@ -705,7 +705,7 @@ main__section2
 .comment__anser {
     display: flex;
     justify-content: space-between;
-    padding: 5px 0 2px 69px;
+    padding: 5px 0 5px 69px;
     background-image: url("../img/green_circle.svg");
     background-repeat: no-repeat;
     width: 591px;
