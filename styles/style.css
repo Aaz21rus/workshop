@@ -1033,7 +1033,7 @@ main__section4
     }
 }
 
-.schedule__day::before {
+/* .schedule__day::before {
     content: attr(data-day);
     position: absolute;
     background: linear-gradient(to left, #ff7d56 0%, #ff498e 100%);
@@ -1044,12 +1044,12 @@ main__section4
     height: 100%;
     left: 0;
     transition: width 0.3s;
-}
+} */
 
-.schedule__day:hover::before {
+/* .schedule__day:hover::before {
     width: 100%;
     transition: width 0.3s;    
-}
+} */
 
 .schedule__radio {
     width: 1056px;
@@ -1831,6 +1831,10 @@ footer
     color: #ffffff;
     font-size: 15px;
     line-height: 18px;
+}
+
+.jq-selectbox__dropdown {
+    background-color: #3d466a;
 }
 
 .jq-selectbox__dropdown ul li {

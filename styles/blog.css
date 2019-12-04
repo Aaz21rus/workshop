@@ -776,6 +776,12 @@ main__section2
     background-color: #6f6f6f;
 }
 
+@media (max-width: 420px) {
+    .news-list__picture {
+        margin-right: 5px;
+    }
+}
+
 .news-list__info {
     width: 178px;
 }
@@ -822,6 +828,12 @@ main__section2
     display: block;
     padding: 18px 29px 19px 29px;
     margin-right: 7px;
+}
+
+@media (max-width: 420px) {
+    .tags__client {
+        font-size: 14px;
+    }
 }
 
 .tags__success {
@@ -972,6 +984,10 @@ footer
     color: #ffffff;
     font-size: 15px;
     line-height: 18px;
+}
+
+.jq-selectbox__dropdown {
+    background-color: #3d466a;
 }
 
 .jq-selectbox__dropdown ul li {
