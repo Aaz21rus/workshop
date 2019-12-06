@@ -449,8 +449,8 @@ main__section1
 
 .intro__title {
     color: #ffffff;
-    font-size: 45px;
-    line-height: 45px;
+    font-size: 40px;
+    line-height: 40px;
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 0.68px;
@@ -458,7 +458,7 @@ main__section1
 }
 
 .intro__line {
-    width: 100px;
+    width: 180px;
     height: 2px;
     background-color: #ffffff;
     background-image: linear-gradient(to left, #ff7d56 0%, #ff498e 100%);
@@ -478,6 +478,227 @@ main__section1
 main__section2
 
 ############################################################################ */
+
+.section__contact {
+    padding: 110px 0;
+}
+
+.contact__blocks {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 109px;
+}
+
+.contact__block {
+    width: 373px;
+    height: 273px;
+    border-radius: 5px;
+    background-color: #283154;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact__img {
+    margin-bottom: 32px;
+}
+
+.contact__tittle {
+    color: #fffefe;
+    font-family: "Fira Sans Condensed Regular";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    display: block;
+}
+
+.contact__info {
+    width: 214px;
+    color: #dbd9d9;
+    font-family: 'Poppins Regular';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    display: block;
+    text-align: center;
+}
+
+.contact__info_address {
+    width: 294px;
+}
+
+.title {
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 37px;
+    padding-bottom: 5px;
+}
+
+.lines {
+    padding-left: 53px;
+    background-image: url("../img/Lines2.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.send__title {
+    margin-bottom: 48px;
+}
+
+.send__user {
+    margin-bottom: 38px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.send__user_name {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 49%;
+}
+
+.send__user_mail {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 49%;
+}
+
+.send__input-name {
+    color: #ffffff;
+    font-family: 'Poppins Regular';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.send__input {
+    border-radius: 5px;
+    border: 1px solid #313a5c;
+    background-color: transparent;
+    padding: 20px 26px;
+}
+
+.send__input::placeholder {
+    color: #585e74;
+    font-family: 'Poppins Regular';
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.send__user_massage {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.send__input_text {
+    resize: none;
+    height: 200px;
+    margin-bottom: 42px;
+}
+
+.send__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.send__v {
+    display: none;
+}
+
+.send__checkbox {
+    position: relative;
+    padding-left: 47px;
+    color: #ffffff;
+    font-family: 'Poppins Regular';
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.send__checkbox::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    display: inline-block;
+    height: 4px;
+    width: 6px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    color: #ffffff;
+    transform: rotate(-45deg);
+}
+
+.send__checkbox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-color: #1d2751;
+    margin-right: 27px;
+}
+
+.send__v + .send__checkbox::after {
+    content: none;
+}
+
+.send__v:checked + .send__checkbox::after {
+    content: "";
+}
+
+.send__but {
+    color: #ffffff;
+    font-family: 'Poppins Regular';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #313a5c;
+    padding: 22px 47px 21px 44px;
+    position: relative;
+    z-index: 0;
+}
+
+.send__but::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform-origin: 0 0;
+    transform: scaleY(0);
+    background: linear-gradient(to left, #ff7d56 0%, #ff498e 100%);
+    transition: transform 0.5s; 
+    border-radius: 5px;   
+}
+
+.send__but:hover::before {
+    transform: scaleY(1);
+}
+
+.send__picture {
+    width: 100%;
+    height: 550px;
+    background-color: #909090;
+    display: block;
+}
 
 /* ############################################################################
 

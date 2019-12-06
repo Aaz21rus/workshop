@@ -155,8 +155,6 @@ Header
         display: none;
         top: 84px;
         left: 20px;
-        /* transform: translateY(-100%); */
-        /* transition: display 0.3s; */
     }
 
     .nav__menu_active {
