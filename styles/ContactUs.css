@@ -483,10 +483,23 @@ main__section2
     padding: 110px 0;
 }
 
+@media (max-width: 1355px) {
+    .section__contact {
+        padding: 110px 20px;
+    }
+}
+
 .contact__blocks {
     display: flex;
     justify-content: space-between;
     margin-bottom: 109px;
+}
+
+@media (max-width: 700px) {
+    .contact__blocks {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .contact__block {
@@ -498,6 +511,25 @@ main__section2
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media (max-width: 1355px) {
+    .contact__block:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    .contact__block:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 420px) {
+    .contact__block {
+        width: 100%;
+    }
 }
 
 .contact__img {
@@ -530,6 +562,12 @@ main__section2
     width: 294px;
 }
 
+@media (max-width: 955px) {
+    .contact__info_address {
+        width: 214px;
+    }
+}
+
 .title {
     font-weight: 400;
     color: #ffffff;
@@ -555,6 +593,12 @@ main__section2
     justify-content: space-between;
 }
 
+@media (max-width: 700px) {
+    .send__user {
+        flex-direction: column;
+    }
+}
+
 .send__user_name {
     display: flex;
     flex-direction: column;
@@ -562,11 +606,24 @@ main__section2
     width: 49%;
 }
 
+@media (max-width: 700px) {
+    .send__user_name {
+        margin-bottom: 40px;
+        width: 100%;
+    }
+}
+
 .send__user_mail {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     width: 49%;
+}
+
+@media (max-width: 700px) {
+    .send__user_mail {
+        width: 100%;
+    }
 }
 
 .send__input-name {
@@ -584,6 +641,7 @@ main__section2
     border: 1px solid #313a5c;
     background-color: transparent;
     padding: 20px 26px;
+    color: #ffffff;
 }
 
 .send__input::placeholder {
@@ -623,6 +681,13 @@ main__section2
     font-family: 'Poppins Regular';
     font-size: 14px;
     font-weight: 400;
+}
+
+@media (max-width: 420px) {
+    .send__checkbox {
+        padding-left: 30px;
+        font-size: 10px;
+    }
 }
 
 .send__checkbox::after {
@@ -691,6 +756,14 @@ main__section2
 
 .send__but:hover::before {
     transform: scaleY(1);
+}
+
+@media (max-width: 420px) {
+    .send__but {
+        padding: 20px;
+        font-size: 10px;
+        line-height: 10px;
+    }
 }
 
 .send__picture {
