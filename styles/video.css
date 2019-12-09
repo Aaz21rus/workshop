@@ -37,6 +37,7 @@ General
     margin: 0;
     box-sizing: border-box;
     font-family: 'Fira Sans Condensed Regular';
+    font-size: 0;
 }
 
 ul {
@@ -515,10 +516,44 @@ main__section2
     }
 }
 
+.blog__list {
+    display: none;
+    grid-template-columns: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 60px;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 830px) {
+    .blog__list {
+        grid-template-columns: 1fr;
+    }
+} 
+
+@media (max-width: 420px) {
+    .blog__list {
+        grid-row-gap: 20px;
+    }
+}
+
+.blog__list_active {
+    display: grid;
+}
+
+.faded {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.faded.in {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
 .blog__unit {
     display: flex;
     flex-direction: column;
-    width: 370px;
+    width: 100%;
 }
 
 @media (max-width: 420px) {
@@ -527,19 +562,24 @@ main__section2
     }
 }
 
+.blog__video {
+    display: block;
+}
+
 .blog__picture {
-    height: 250px;
+    /* height: 250px;
     background-color: #6f6f6f;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0; */
 }
 
 .blog__info {
     background-color: #313959;
-    border-radius: 0 0 10px 10px;
-    padding: 35px 0 34px 31px;
+    padding: 32px 38px 32px 32px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.blog__title {
+/* .blog__title {
     color:   #ffffff;
     font-family: 'Fira Sans Condensed Regular';
     font-weight: 400;
@@ -601,41 +641,7 @@ main__section2
 
 .blog__ar:hover .blog__arrow {
     opacity: 1;
-}
-
-.blog__list {
-    display: none;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 30px;
-    grid-row-gap: 60px;
-    margin-bottom: 60px;
-}
-
-@media (max-width: 830px) {
-    .blog__list {
-        grid-template-columns: 1fr;
-    }
-} 
-
-@media (max-width: 420px) {
-    .blog__list {
-        grid-row-gap: 20px;
-    }
-}
-
-.blog__list_active {
-    display: grid;
-}
-
-.faded {
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.faded.in {
-    opacity: 1;
-    transition: opacity 0.3s;
-}
+} */
 
 .blog__buttons {
     display: flex;
@@ -840,6 +846,10 @@ footer
 } 
 
 .sign {
+    font-family: 'Poppins Regular';
+    color: #848597;
+    font-size: 15px;
+    font-weight: 400;
     background-color: transparent;
     border-radius: 5px;
     border: 1px solid #383f5c;
