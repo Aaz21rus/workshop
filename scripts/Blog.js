@@ -42,6 +42,7 @@ $(document).ready(function(){
             $(data).addClass('in');
         }, 300);
     });
+    
     $('.blog__next').on('click', function(){         
         if ($('.blog__but_active').parents('li').next().find('.blog_but_number').length === 0) {
             let next = $('.blog__but_active').parents('li').next().find('button').attr('data-class');
