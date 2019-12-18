@@ -1937,8 +1937,8 @@ footer
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     width: 0;
-    height: 100%;
-    transition: width 0.3s;
+    height: 15px;
+    transition: width 1s;
 }
 
 .footer__city {
@@ -1956,8 +1956,8 @@ footer
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     width: 0;
-    height: 100%;
-    transition: width 0.3s;
+    height: 15px;
+    transition: width 1s;
 }
 
 .footer__date {
@@ -1975,8 +1975,8 @@ footer
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     width: 0;
-    height: 100%;
-    transition: width 0.3s;
+    height: 15px;
+    transition: width 1s;
 }
 
 .footer__New-York:hover .footer__time:before {

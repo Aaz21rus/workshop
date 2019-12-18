@@ -166,11 +166,6 @@ $(document).ready( function() {
             $(number).addClass('show');
         }, 300);
     });
-    // $('.chart__play').on('click', function(){
-    //     $('.chart__play').trigger('click', function(){
-    //         $(this);
-    //     }); 
-    // });
 
     $('.schedule__radio-name').on('click', function(event){
         event.preventDefault();
