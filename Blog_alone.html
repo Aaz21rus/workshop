@@ -11,19 +11,25 @@
     </head>
     <body>
         <div class="form-wrapper">
-            <form class="form">
-                <input type="text" placeholder="Name" class="form__name">
-                <input type="password" placeholder="password" class="form__password">
-                <input type="submit" class="form__submit">
-            </form>
+            <div class="form-wrapper__sign">
+                <img src="img/x.png" class="form_close" alt="close">
+                <form class="form">
+                    <input type="text" placeholder="Name" class="form__name">
+                    <input type="password" placeholder="password" class="form__password">
+                    <input type="submit" class="form__submit">
+                </form>
+            </div>
         </div>
         <div class="form-signup">
-            <form class="form form_signup">
-                <input type="text" placeholder="Name" class="form__name">
-                <input type="password" placeholder="password" class="form__password">
-                <input type="password" placeholder="confirm password" class="form__password">
-                <input type="submit" value="Sign up" class="form__signup">
-            </form>
+            <div class="form-wrapper__sign">
+                <img src="img/x.png" class="form-signup_close" alt="close">
+                <form class="form form_signup">
+                    <input type="text" placeholder="Name" class="form__name">
+                    <input type="password" placeholder="password" class="form__password">
+                    <input type="password" placeholder="confirm password" class="form__password">
+                    <input type="submit" value="Sign up" class="form__signup">
+                </form>
+            </div>
         </div>
         <header class="header">
             <div class="center1690 header__center">
@@ -262,7 +268,7 @@
             <section class="section_gray">
                 <div class="section__blog blog center">
                     <div class="blog__alone">
-                        <img src="#" alt="img" class="blog__image">
+                        <img src="img/4.png" alt="img" class="blog__image">
                         <h2 class="blog__title">Bringing Live DJ Sets to Music Festivals.</h2>
                         <p class="blog__text-paragraph blog__text-paragraph_one">Lorem ipsum dolor sit amet, consectetur 
                             adipiscing elit. Vivamus euismod risus ligula, id luctus lectus volutpat 
@@ -323,10 +329,10 @@
                                 </ul>
                             </div>
                             <ul class="blog__tags-admin">
-                                <li><a href="#" class="blog__tag-admin">blog post</a></li>
-                                <li><a href="#" class="blog__tag-admin">Artistic</a></li>
-                                <li><a href="#" class="blog__tag-admin">real estate</a></li>
-                                <li><a href="#" class="blog__tag-admin">family home</a></li>
+                                <li><a href="#" data-text="blog post" class="blog__tag-admin">blog post</a></li>
+                                <li><a href="#" data-text="Artistic" class="blog__tag-admin">Artistic</a></li>
+                                <li><a href="#" data-text="real estate" class="blog__tag-admin">real estate</a></li>
+                                <li><a href="#" data-text="family home" class="blog__tag-admin">family home</a></li>
                             </ul>
                         </div>
                         <h2 class="blog__comments-title">Comments ( 2 )</h2>
@@ -336,12 +342,12 @@
                                     <h3 class="comment__author">Kavin smith&nbsp;&nbsp;&nbsp;&nbsp;-</h3>
                                     <p class="comment__info">CEO CHI ART PRO</p>
                                 </div>
-                                <p class="comment__info comment__info_replay">REPLY</p>
+                                <a href="#" class="comment__info comment__info_replay">REPLY</a>
                             </div>
                             <p class="comment__text">Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna, condimentum a vehiculaa,Duis lacus </p>
                             <div class="comment__anser">
                                 <input type="text" placeholder="Leave a mesage" class="comment__input">
-                                <p class="comment__info comment__info_replay">REPLY</p>
+                                <a href="#" class="comment__info comment__info_replay">REPLY</a>
                             </div>
                         </div>
                         <div class="blog__comment comment">
@@ -350,7 +356,7 @@
                                     <h3 class="comment__author">Kavin smith    -</h3>
                                     <p class="comment__info">CEO CHI ART PRO</p>
                                 </div>
-                                <p class="comment__info comment__info_replay">REPLY</p>
+                                <a href="3" class="comment__info comment__info_replay">REPLY</a>
                             </div>
                             <p class="comment__text">Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna, condimentum a vehiculaa,Duis lacus</p>
                         </div>
@@ -368,32 +374,32 @@
                         <ul class="categories__list">
                             <li class="categories__wrapper">
                                 <a class="categories__unit" href="#">
-                                    <p class="categories__name">Dessert</p>
-                                    <p class="categories__number">3</p>
+                                    <p data-info="Dessert" class="categories__name">Dessert</p>
+                                    <p data-info="3" class="categories__number">3</p>
                                 </a>
                             </li>
                             <li class="categories__wrapper">
                                 <a class="categories__unit" href="#">
-                                    <p class="categories__name">Vegetarian</p>
-                                    <p class="categories__number">5</p>
+                                    <p data-info="Vegetarian" class="categories__name">Vegetarian</p>
+                                    <p data-info="5" class="categories__number">5</p>
                                 </a>
                             </li>
                             <li class="categories__wrapper">
                                 <a class="categories__unit" href="#">
-                                    <p class="categories__name">Western</p>
-                                    <p class="categories__number">2</p>
+                                    <p data-info="Western" class="categories__name">Western</p>
+                                    <p data-info="2" class="categories__number">2</p>
                                 </a>
                             </li>
                             <li class="categories__wrapper">
                                 <a class="categories__unit" href="#">
-                                    <p class="categories__name">Photograph</p>
-                                    <p class="categories__number">1</p>
+                                    <p data-info="Photograph" class="categories__name">Photograph</p>
+                                    <p data-info="1" class="categories__number">1</p>
                                 </a>
                             </li>
                             <li class="categories__wrapper">
                                 <a class="categories__unit" href="#">
-                                    <p class="categories__name">Uncategorized</p>
-                                    <p class="categories__number">0</p>
+                                    <p data-info="Uncategorized" class="categories__name">Uncategorized</p>
+                                    <p data-info="0" class="categories__number">0</p>
                                 </a>
                             </li>
                         </ul>
@@ -401,40 +407,40 @@
                         <ul class="blog__news news-list">
                             <li class="news-list__item">
                                 <a href="#" class="news-list__unit">
-                                    <img src="#" alt="news" class="news-list__picture">
+                                    <img src="img/cover4.png" alt="news" class="news-list__picture">
                                     <div class="news-list__info">
-                                        <p class="news-list__date">19- JAN- 2017</p>
-                                        <p class="news-list__text">Nullam at mauris fauci bus orci luctus pel.</p>
+                                        <p data-info="19- JAN- 2017" class="news-list__date">19- JAN- 2017</p>
+                                        <p data-info="Nullam at mauris fauci bus orci luctus pel." class="news-list__text">Nullam at mauris fauci bus orci luctus pel.</p>
                                     </div>
                                 </a>
                             </li>
                             <li class="news-list__item">
                                 <a href="#" class="news-list__unit">
-                                    <img src="#" alt="news" class="news-list__picture">
+                                    <img src="img/cover5.png" alt="news" class="news-list__picture">
                                     <div class="news-list__info">
-                                        <p class="news-list__date">19- JAN- 2017</p>
-                                        <p class="news-list__text">Nullam at mauris fauci bus orci luctus pel.</p>
+                                        <p data-info="19- JAN- 2017" class="news-list__date">19- JAN- 2017</p>
+                                        <p data-info="Nullam at mauris fauci bus orci luctus pel." class="news-list__text">Nullam at mauris fauci bus orci luctus pel.</p>
                                     </div>
                                 </a>
                             </li>
                             <li class="news-list__item">
                                     <a href="#" class="news-list__unit">
-                                    <img src="#" alt="news" class="news-list__picture">
+                                    <img src="img/cover1.png" alt="news" class="news-list__picture">
                                     <div class="news-list__info">
-                                        <p class="news-list__date">19- JAN- 2017</p>
-                                        <p class="news-list__text">Nullam at mauris fauci bus orci luctus pel.</p>
+                                        <p data-info="19- JAN- 2017" class="news-list__date">19- JAN- 2017</p>
+                                        <p data-info="Nullam at mauris fauci bus orci luctus pel." class="news-list__text">Nullam at mauris fauci bus orci luctus pel.</p>
                                     </div>
                                 </a>
                             </li>
                         </ul>
                         <h2 class="blog__categories blog__tags tags">Tags</h2>
                         <div class="tags__line-one">
-                            <a href="" class="tags__business tag">Business</a>
-                            <a href="" class="tags__success tag">Success</a>
+                            <a href="#" data-info="Business" class="tags__business tag">Business</a>
+                            <a href="#" data-info="Success" class="tags__success tag">Success</a>
                         </div>
                         <div class="tags__line-two">
-                            <a href="" class="tags__client tag">Client Meetings</a>
-                            <a href="" class="tags__charity tag">Charity</a>
+                            <a href="#" data-info="Client Meetings" class="tags__client tag">Client Meetings</a>
+                            <a href="#" data-info="Charity" class="tags__charity tag">Charity</a>
                         </div>
                     </aside>
                 </div>

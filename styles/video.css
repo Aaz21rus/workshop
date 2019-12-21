@@ -730,6 +730,21 @@ footer
     padding: 20px;
 }
 
+.form-wrapper__sign {
+    display: flex;
+    align-items: flex-start;
+}
+
+.form_close {
+    order: 1;
+    cursor: pointer;
+}
+
+.form-signup_close {
+    order: 1;
+    cursor: pointer;    
+}
+
 .form_signup {
     height: 220px;
 }

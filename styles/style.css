@@ -1715,6 +1715,22 @@ footer
     display: flex;
     flex-direction: column;
     padding: 20px;
+    position: relative;
+}
+
+.form-wrapper__sign {
+    display: flex;
+    align-items: flex-start;
+}
+
+.form_close {
+    order: 1;
+    cursor: pointer;
+}
+
+.form-signup_close {
+    order: 1;
+    cursor: pointer;    
 }
 
 .form_signup {

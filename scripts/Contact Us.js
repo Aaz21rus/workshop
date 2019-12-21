@@ -28,4 +28,12 @@ $(document).ready(function(){
     $('.form__signup').on('click', function(){
         $('.form-signup').removeClass('form-wrapper_active');
     });
+
+    $('.form_close').on('click', function(){
+        $('.form-wrapper').removeClass('form-wrapper_active');
+    });
+
+    $('.form-signup_close').on('click', function(){
+        $('.form-signup').removeClass('form-wrapper_active');
+    });
 });

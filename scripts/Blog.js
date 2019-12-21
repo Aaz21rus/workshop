@@ -29,6 +29,14 @@ $(document).ready(function(){
         $('.form-signup').removeClass('form-wrapper_active');
     });
 
+    $('.form_close').on('click', function(){
+        $('.form-wrapper').removeClass('form-wrapper_active');
+    });
+
+    $('.form-signup_close').on('click', function(){
+        $('.form-signup').removeClass('form-wrapper_active');
+    });
+
     $('.blog_but_number').on('click', function(){
         $('.blog__but').removeClass('blog__but_active');
         $(this).addClass('blog__but_active');
