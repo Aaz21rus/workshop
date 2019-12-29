@@ -481,7 +481,7 @@ main__section2
 
 .section__blog {
     padding-top: 110px;
-    padding-bottom: 110px;
+    padding-bottom: 106px;
     display: flex;
     justify-content: space-between;
 }
@@ -579,7 +579,7 @@ main__section2
     font-size: 25px;
     font-weight: 400;
     line-height: 25px;
-    margin-bottom: 28px;
+    margin-bottom: 21px;
 }
 
 @media (max-width: 830px) {
@@ -605,17 +605,19 @@ main__section2
 }
 
 .blog__text-paragraph_one {
-    margin-bottom: 29px;
+    margin-bottom: 19px;
+    line-height: 30px;
 }
 
 .blog__text-paragraph_two {
-    margin-bottom: 47px;
+    margin-bottom: 50px;
+    line-height: 20px;
 }
 
 .blog__quote {
     padding: 42px 100px 41px 41px;
     background-color: #13142e;
-    margin-bottom: 43px;
+    margin-bottom: 34px;
 }
 
 @media (max-width: 830px) {
@@ -636,8 +638,8 @@ main__section2
     font-size: 20px;
     font-weight: 400;
     font-style: italic;
-    line-height: 30px;
-    margin-bottom: 28px;
+    line-height: 27px;
+    margin-bottom: 24px;
 }
 
 .blog__quote_author {
@@ -649,13 +651,13 @@ main__section2
 }
 
 .blog__text-paragraph_three {
-    margin-bottom: 43px;
+    margin-bottom: 39px;
 }
 
 .blog__admin {
     margin-bottom: 59px;
     background-color: #13142e;
-    padding: 35px 31px 41px 26px;
+    padding: 35px 31px 40px 26px;
 }
 
 @media (max-width: 420px) {
@@ -680,7 +682,7 @@ main__section2
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .blog__social {
@@ -724,7 +726,7 @@ main__section2
     font-weight: 400;
     line-height: 14px;
     display: block;
-    padding: 15px;
+    padding: 13px;
     border: 1px solid #30395e;
     position: relative;
     z-index: 0;
@@ -760,7 +762,7 @@ main__section2
 }
 
 .blog__comments-title {
-    margin-bottom: 53px;
+    margin-bottom: 56px;
     color: #ffffff;
     font-size: 24px;
     font-weight: 400;
@@ -768,7 +770,7 @@ main__section2
 }
 
 .blog__comment {
-    margin-bottom: 41px;
+    margin-bottom: 44px;
 }
 
 .comment {
@@ -790,7 +792,7 @@ main__section2
 
 .comment__name {
     display: flex;
-    margin-bottom: 27px;
+    margin-bottom: 17px;
 }
 
 @media (max-width: 420px) {
@@ -824,7 +826,7 @@ main__section2
     font-size: 15px;
     font-weight: 400;
     line-height: 26px;
-    margin-bottom: 33px;
+    margin-bottom: 31px;
 }
 
 .comment__anser {
@@ -868,10 +870,11 @@ main__section2
     font-size: 14px;
     font-weight: 400;
     line-height: 14px;
-    padding: 0 0 8px 6px;
+    padding: 0 0 5px 6px;
     border: none;
-    border-bottom: 2px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
     width: 421px;
+    margin-bottom: 6px;
 }
 
 .form__title {
@@ -883,7 +886,7 @@ main__section2
 }
 
 .form__name-comment {
-    padding: 22px 0;
+    padding: 33px 0 22px 0;
     color: #adb1c0;
     font-family: 'Poppins Regular';
     font-size: 14px;
@@ -893,7 +896,7 @@ main__section2
     border: none;
     border-bottom: 1px solid #dbdbdb;
     width: 388px;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
 }
 
 .form__name-comment_name {
@@ -921,7 +924,7 @@ main__section2
     border: none;
     border-bottom: 1px solid #dbdbdb;
     resize: none;
-    margin-bottom: 44px;
+    margin-bottom: 36px;
 }
 
 @media(max-width: 1190px) {
@@ -972,15 +975,8 @@ main__section2
     border-bottom: 2px solid #2f364f;
     width: 345px;
     outline: none;
-    margin-bottom: 69px;
-    color: #ffffff;
-}
-
-@media(max-width: 1190px) {
-    .blog__search {
-        width: 100%;
-        background-position-x: right;
-    }
+    margin-bottom: 59px;
+    color: #f1f1f1;
 }
 
 .blog__search::placeholder {
@@ -988,6 +984,12 @@ main__section2
     font-family: 'Poppins Regular';
     font-size: 15px;
     font-weight: 400;
+}
+
+@media (max-width: 420px) {
+    .blog__search {
+        width: 280px;
+    }
 }
 
 .blog__categories {
@@ -1000,7 +1002,7 @@ main__section2
 }
 
 .categories__list {
-    margin-bottom: 70px;
+    margin-bottom: 47px;
 }
 
 .categories__unit {
@@ -1016,10 +1018,10 @@ main__section2
     border-bottom: 2px solid #2f364f;
 }
 
-@media(max-width: 1190px) {
+@media (max-width: 420px) {
     .categories__unit {
-        width: 100%;
-    }    
+        width: 280px;
+    }
 }
 
 .categories__name {
@@ -1059,11 +1061,11 @@ main__section2
 }
 
 .news {
-    margin-bottom: 39px;
+    margin-bottom: 37px;
 }
 
 .blog__news {
-    margin-bottom: 71px;
+    margin-bottom: 68px;
 }
 
 .news-list__item {
@@ -1077,7 +1079,6 @@ main__section2
 .news-list__unit {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .news-list__picture {
@@ -1086,14 +1087,14 @@ main__section2
     background-color: #6f6f6f;
 }
 
-@media(max-width: 1190px) {
+@media (max-width: 420px) {
     .news-list__picture {
         margin-right: 5px;
     }
 }
 
 .news-list__info {
-    width: 178px;
+    width: 182px;
 }
 
 .news-list__date {
@@ -1102,8 +1103,9 @@ main__section2
     font-size: 15px;
     font-weight: 500;
     line-height: 15px;
-    margin-bottom: 18px;
+    margin-bottom: 13px;
     position: relative;
+    padding-top: 6px;
 }
 
 .news-list__date::before {
@@ -1146,12 +1148,12 @@ main__section2
 }
 
 .blog__tags {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 .tags__line-one {
     display: flex;
-    margin-bottom: 7px;
+    margin-bottom: 9px;
 }
 
 .tags__line-two {
@@ -1164,12 +1166,6 @@ main__section2
     font-family: "Poppins Regular";
     font-size: 15px;
     font-weight: 500;
-}
-
-@media (max-width: 420px) {
-    .tag {
-        font-size: 14px;
-    }
 }
 
 .tag::before {
@@ -1189,24 +1185,35 @@ main__section2
 
 .tags__business {
     display: block;
-    padding: 18px 29px 19px 29px;
+    padding: 11px 29px 13px 29px;
     margin-right: 7px;
+    position: relative;
+}
+
+@media (max-width: 420px) {
+    .tags__client {
+        font-size: 14px;
+    }
 }
 
 .tags__success {
     display: block;
-    padding: 19px 27px 19px 25px;
+    padding: 12px 27px 13px 25px;
+    position: relative;
 }
 
 .tags__client {
     display: block;
-    padding: 18px 23px 16px 24px;
+    padding: 10px 23px 15px 24px;
     margin-right: 7px;
+    position: relative;
+
 }
 
 .tags__charity {
     display: block;
-    padding: 18px 29px 16px 29px;
+    padding: 11px 29px 12px 29px;
+    position: relative;
 }
 
 /* ############################################################################
@@ -1286,7 +1293,7 @@ footer
 
 .footer__center {
     padding-top: 109px;
-    padding-bottom: 122px;
+    padding-bottom: 106px;
     border-bottom: 1px solid #1e253f;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1589,7 +1596,7 @@ footer
     font-family: 'Poppins Regular';
     font-size: 15px;
     line-height: 15px;
-    margin-bottom: 22px;
+    margin-bottom: 18px;
     text-align: center;
 }
 

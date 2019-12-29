@@ -405,7 +405,7 @@ main__section1
 
 .intro__social-list {
     position: absolute;
-    top: 50%;
+    top: 46%;
     right: 0;
     transform: translate(-50%);
 }
@@ -432,7 +432,7 @@ main__section1
 }
 
 .intro__social-list li {
-    margin-bottom: 26px;
+    margin-bottom: 23px;
 }
 
 .intro__social-list li:last-child {

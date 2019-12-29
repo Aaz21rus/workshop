@@ -596,7 +596,7 @@ main__section2
     align-items: center;
     background-color: #1e253f;
     opacity: 0.91;
-    bottom: 88px;
+    bottom: 80px;
 }
 
 .video__prop {
@@ -622,7 +622,7 @@ main__section2
 
 .blog__info {
     background-color: #313959;
-    padding: 32px 38px 32px 32px;
+    padding: 32px 38px 24px 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -765,7 +765,7 @@ footer
 
 .footer__center {
     padding-top: 109px;
-    padding-bottom: 122px;
+    padding-bottom: 104px;
     border-bottom: 1px solid #1e253f;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1077,7 +1077,7 @@ footer
     font-family: 'Poppins Regular';
     font-size: 15px;
     line-height: 15px;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
     text-align: center;
 }
 

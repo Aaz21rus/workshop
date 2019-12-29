@@ -180,8 +180,6 @@ Header
         display: none;
         top: 84px;
         left: 20px;
-        /* transform: translateY(-100%); */
-        /* transition: display 0.3s; */
     }
 
     .nav__menu_active {
@@ -705,7 +703,7 @@ main__section2
     border-bottom: 2px solid #2f364f;
     width: 345px;
     outline: none;
-    margin-bottom: 69px;
+    margin-bottom: 72px;
     color: #f1f1f1;
 }
 
@@ -732,7 +730,7 @@ main__section2
 }
 
 .categories__list {
-    margin-bottom: 70px;
+    margin-bottom: 47px;
 }
 
 .categories__unit {
@@ -791,11 +789,11 @@ main__section2
 }
 
 .news {
-    margin-bottom: 39px;
+    margin-bottom: 37px;
 }
 
 .blog__news {
-    margin-bottom: 71px;
+    margin-bottom: 68px;
 }
 
 .news-list__item {
@@ -809,7 +807,6 @@ main__section2
 .news-list__unit {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .news-list__picture {
@@ -825,7 +822,7 @@ main__section2
 }
 
 .news-list__info {
-    width: 178px;
+    width: 182px;
 }
 
 .news-list__date {
@@ -834,8 +831,9 @@ main__section2
     font-size: 15px;
     font-weight: 500;
     line-height: 15px;
-    margin-bottom: 18px;
+    margin-bottom: 13px;
     position: relative;
+    padding-top: 6px;
 }
 
 .news-list__date::before {
@@ -878,12 +876,12 @@ main__section2
 }
 
 .blog__tags {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 .tags__line-one {
     display: flex;
-    margin-bottom: 7px;
+    margin-bottom: 9px;
 }
 
 .tags__line-two {
@@ -915,7 +913,7 @@ main__section2
 
 .tags__business {
     display: block;
-    padding: 18px 29px 19px 29px;
+    padding: 11px 29px 13px 29px;
     margin-right: 7px;
     position: relative;
 }
@@ -928,13 +926,13 @@ main__section2
 
 .tags__success {
     display: block;
-    padding: 19px 27px 19px 25px;
+    padding: 12px 27px 13px 25px;
     position: relative;
 }
 
 .tags__client {
     display: block;
-    padding: 18px 23px 16px 24px;
+    padding: 10px 23px 15px 24px;
     margin-right: 7px;
     position: relative;
 
@@ -942,7 +940,7 @@ main__section2
 
 .tags__charity {
     display: block;
-    padding: 18px 29px 16px 29px;
+    padding: 11px 29px 12px 29px;
     position: relative;
 }
 
@@ -1023,7 +1021,7 @@ footer
 
 .footer__center {
     padding-top: 109px;
-    padding-bottom: 122px;
+    padding-bottom: 105px;
     border-bottom: 1px solid #1e253f;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1334,7 +1332,7 @@ footer
     font-family: 'Poppins Regular';
     font-size: 15px;
     line-height: 15px;
-    margin-bottom: 22px;
+    margin-bottom: 18px;
     text-align: center;
 }
 
