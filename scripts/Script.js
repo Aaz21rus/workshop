@@ -156,11 +156,11 @@ $(document).ready( function() {
 
     $('.chart__play').on('click', function(){
         let number = $(this).attr('data-num');        
-        let video = $(this).attr('data-video');
+        // let video = $(this).attr('data-video');
 
         $('.chart__description').removeClass('chart__description_active').removeClass('show');
         $(number).addClass('chart__description_active');
-        $(number).find('iframe').attr('src', video);
+        // $(number).find('iframe').attr('src', video);
             
         setTimeout(function(){
             $(number).addClass('show');
